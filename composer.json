@@ -24,6 +24,11 @@
             "Kartano\\Statuspage\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "KartanoTest\\": "test/"
+        }
+    },
     "scripts": {
         "cs-check": "phpcs -sp",
         "cs-fix": "phpcbf",
