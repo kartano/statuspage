@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Kartano\Statuspage\PageElements;
 
+use Kartano\Statuspage\Util;
+
 final class IncidentUpdate
 {
     public ?string $id = null {
@@ -58,9 +60,9 @@ final class IncidentUpdate
         $this->id = $incidentUpdate['id'];
         $this->status = $incidentUpdate['status'];
         $this->body = $incidentUpdate['body'];
-        $this->created_at = $incidentUpdate['created_at'] ?? null;
-        $this->updated_at = $incidentUpdate['updated_at'] ?? null;
-        $this->display_at = $incidentUpdate['display_at'] ?? null;
+        $this->created_at = Util::safeDateTime($incidentUpdate['created_at']);
+        $this->updated_at = Util::safeDateTime($incidentUpdate['updated_at']);
+        $this->display_at = Util::safeDateTime($incidentUpdate['display_at']);
         $this->deliver_notifications = $incidentUpdate['deliver_notifications'];
         $this->custom_tweet = $incidentUpdate['custom_tweet'];
         $this->tweet_id = $incidentUpdate['tweet_id'];

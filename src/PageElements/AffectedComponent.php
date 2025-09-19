@@ -22,7 +22,6 @@ final class AffectedComponent
         get => $this->new_status;
         set { $this->new_status = $value; }
     }
-
     public ?IncidentUpdate $parent_incident_update = null {
         get => $this->parent_incident_update;
         set { $this->parent_incident_update = $value; }

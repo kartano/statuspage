@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Kartano\Statuspage\PageElements;
 
+use Kartano\Statuspage\Util;
+
 final class Page
 {
     public ?string $id = null {
@@ -37,6 +39,6 @@ final class Page
         $this->name = $page['name'];
         $this->url = $page['url'];
         $this->time_zone = new \DateTimeZone($page['time_zone']);
-        $this->updated_at = $page['updated_at'] ?? null;
+        $this->updated_at = Util::safeDateTime($page['updated_at']);
     }
 }
