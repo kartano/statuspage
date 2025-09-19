@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Kartano\Statuspage\PageElements;
 
+use Kartano\Statuspage\Util;
+
 final class IncidentComponent
 {
     public ?string $id = null {
@@ -23,12 +25,12 @@ final class IncidentComponent
 
     public ?\DateTime $created_at = null {
         get => $this->created_at;
-        set { $this->created_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->created_at = $value; }
     }
 
     public ?\DateTime $updated_at = null {
         get => $this->updated_at;
-        set { $this->updated_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->updated_at = $value; }
     }
 
     public ?int $position = null {
@@ -48,7 +50,7 @@ final class IncidentComponent
 
     public ?\DateTime $start_date = null {
         get => $this->start_date;
-        set { $this->start_date = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->start_date = $value; }
     }
 
     public ?string $group_id = null {
@@ -77,12 +79,12 @@ final class IncidentComponent
         $this->id = $incidentComponent['id'];
         $this->name = $incidentComponent['name'];
         $this->status = $incidentComponent['status'];
-        $this->created_at = $incidentComponent['created_at'];
-        $this->updated_at = $incidentComponent['updated_at'] ?? null;
+        $this->created_at = Util::safeDateTime($incidentComponent['created_at']);
+        $this->updated_at =  Util::safeDateTime($incidentComponent['updated_at']);
         $this->position = $incidentComponent['position'] ?? null;
         $this->description = $incidentComponent['description'] ?? null;
         $this->showcase = $incidentComponent['showcase'] ?? null;
-        $this->start_date = $incidentComponent['start_date'] ?? null;
+        $this->start_date =  Util::safeDateTime($incidentComponent['start_date']);
         $this->group_id = $incidentComponent['group_id'] ?? null;
         $this->group = $incidentComponent['group'] ?? null;
         $this->only_show_if_degraded = $incidentComponent['only_show_if_degraded'] ?? null;

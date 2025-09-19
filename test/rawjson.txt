@@ -1,0 +1,4128 @@
+{
+  "page": {
+    "id": "mrrn21wjyltc",
+    "name": "Clever",
+    "url": "https://status.clever.com",
+    "time_zone": "America/Los_Angeles",
+    "updated_at": "2025-09-19T08:43:01.143-07:00"
+  },
+  "incidents": [
+    {
+      "id": "zkl805hgfr3x",
+      "name": "Google Outage preventing some Logins to Clever",
+      "status": "resolved",
+      "created_at": "2025-09-18T08:29:43.551-07:00",
+      "updated_at": "2025-09-19T08:43:01.140-07:00",
+      "monitoring_at": "2025-09-18T13:26:28.552-07:00",
+      "resolved_at": "2025-09-19T08:43:01.125-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/6bp65y48vpdg",
+      "started_at": "2025-09-18T08:29:43.545-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "44jdmn20p6dh",
+          "status": "resolved",
+          "body": "This incident has been resolved.",
+          "incident_id": "zkl805hgfr3x",
+          "created_at": "2025-09-19T08:43:01.125-07:00",
+          "updated_at": "2025-09-19T08:43:01.125-07:00",
+          "display_at": "2025-09-19T08:43:01.125-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f3h9gyxyhgrf",
+          "status": "monitoring",
+          "body": "Google confirmed that a fix has been implemented for this issue. However, we are monitoring the success of impacted Districts.",
+          "incident_id": "zkl805hgfr3x",
+          "created_at": "2025-09-18T13:26:28.552-07:00",
+          "updated_at": "2025-09-18T13:26:28.552-07:00",
+          "display_at": "2025-09-18T13:26:28.552-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lxdj7wx6qt2c",
+          "status": "identified",
+          "body": "Google, used to login to Chromebooks and Clever for many districts, is experiencing an outage. This is preventing some users from being able to login to Clever via Google. We are monitoring the issue and will provide status updates as they become available from Google.",
+          "incident_id": "zkl805hgfr3x",
+          "created_at": "2025-09-18T08:29:43.653-07:00",
+          "updated_at": "2025-09-18T08:29:43.653-07:00",
+          "display_at": "2025-09-18T08:29:43.653-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "fk4dj1vd4bp1",
+      "name": "Skyward API Data Changes",
+      "status": "resolved",
+      "created_at": "2025-09-09T06:08:40.260-07:00",
+      "updated_at": "2025-09-10T14:09:22.895-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-09-10T14:09:18.960-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/0pwntvpwwzjg",
+      "started_at": "2025-09-09T06:08:40.252-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "rv0sbmcbmd1c",
+          "status": "resolved",
+          "body": "Clever has received word that Skyward has pushed out a fix and we are seeing impacted districts having successful syncs without data changes. If you are still experiencing a sync issue with your Skyward API (Qmlativ) sync, please reach out to Clever Support at support.clever.com\n\nThank you",
+          "incident_id": "fk4dj1vd4bp1",
+          "created_at": "2025-09-10T14:09:18.960-07:00",
+          "updated_at": "2025-09-10T14:09:18.960-07:00",
+          "display_at": "2025-09-10T14:09:18.960-07:00",
+          "affected_components": [
+            {
+              "code": "88xtg14gkzsg",
+              "name": "SIS Sync - Skyward",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "h3d95f02gxw1",
+          "status": "investigating",
+          "body": "Districts that are syncing via Skyward API (qmlativ) are currently experiencing issues with large data changes across multiple data points. This is causing the District’s sync to be placed on hold. We’re investigating the issue and will provide regular status updates.",
+          "incident_id": "fk4dj1vd4bp1",
+          "created_at": "2025-09-09T06:08:40.332-07:00",
+          "updated_at": "2025-09-09T06:08:40.332-07:00",
+          "display_at": "2025-09-09T06:08:40.332-07:00",
+          "affected_components": [
+            {
+              "code": "88xtg14gkzsg",
+              "name": "SIS Sync - Skyward",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "88xtg14gkzsg",
+          "name": "Skyward",
+          "status": "operational",
+          "created_at": "2018-05-29T18:06:26.430-07:00",
+          "updated_at": "2025-09-10T14:09:18.928-07:00",
+          "position": 6,
+          "description": "Clever's automated Skyward Sync",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "pwmmdfgbh6cq",
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "xvyz4b94f7rh",
+      "name": "App Access for Students",
+      "status": "resolved",
+      "created_at": "2025-09-08T13:40:31.281-07:00",
+      "updated_at": "2025-09-10T13:37:04.967-07:00",
+      "monitoring_at": "2025-09-10T12:20:20.835-07:00",
+      "resolved_at": "2025-09-10T13:37:04.948-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/dw1gw64dhtsl",
+      "started_at": "2025-09-08T13:40:31.276-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "q2f0tf6fn489",
+          "status": "resolved",
+          "body": "This incident has been resolved.",
+          "incident_id": "xvyz4b94f7rh",
+          "created_at": "2025-09-10T13:37:04.948-07:00",
+          "updated_at": "2025-09-10T13:37:04.948-07:00",
+          "display_at": "2025-09-10T13:37:04.948-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "w82z9mhvm396",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "xvyz4b94f7rh",
+          "created_at": "2025-09-10T12:20:20.835-07:00",
+          "updated_at": "2025-09-10T12:20:20.835-07:00",
+          "display_at": "2025-09-10T12:20:20.835-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "stsys67c9j65",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "xvyz4b94f7rh",
+          "created_at": "2025-09-09T12:43:26.214-07:00",
+          "updated_at": "2025-09-09T12:43:26.214-07:00",
+          "display_at": "2025-09-09T12:43:26.214-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "tzlxrnh4m4z5",
+          "status": "investigating",
+          "body": "Students are intermittently unable to log into district-added apps from their Clever Portal",
+          "incident_id": "xvyz4b94f7rh",
+          "created_at": "2025-09-08T13:40:31.355-07:00",
+          "updated_at": "2025-09-08T13:40:31.355-07:00",
+          "display_at": "2025-09-08T13:40:31.355-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "gq52f92cfsz1",
+      "name": "Error when switching setup sharing view",
+      "status": "resolved",
+      "created_at": "2025-09-08T07:22:20.667-07:00",
+      "updated_at": "2025-09-08T10:53:38.983-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-09-08T10:53:38.968-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/3ht4k8lcm8s0",
+      "started_at": "2025-09-08T07:22:20.660-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "r717qf41gdrb",
+          "status": "resolved",
+          "body": "This incident has been resolved.",
+          "incident_id": "gq52f92cfsz1",
+          "created_at": "2025-09-08T10:53:38.968-07:00",
+          "updated_at": "2025-09-08T10:53:38.968-07:00",
+          "display_at": "2025-09-08T10:53:38.968-07:00",
+          "affected_components": [
+            {
+              "code": "fqvlv72jswzy",
+              "name": "Rostering API - Events API",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "55m96vqr1jmq",
+          "status": "investigating",
+          "body": "Clever is currently investigating an error when District Admins are trying to switch the setup sharing view when modifying sharing rules for applications. We apologize for the inconvenience this is causing and will post updates as our teams work towards resolving this issue.\n\nThank you!",
+          "incident_id": "gq52f92cfsz1",
+          "created_at": "2025-09-08T07:22:20.737-07:00",
+          "updated_at": "2025-09-08T07:22:20.737-07:00",
+          "display_at": "2025-09-08T07:22:20.737-07:00",
+          "affected_components": [
+            {
+              "code": "fqvlv72jswzy",
+              "name": "Rostering API - Events API",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "fqvlv72jswzy",
+          "name": "Events API",
+          "status": "operational",
+          "created_at": "2015-06-04T15:13:19.124-07:00",
+          "updated_at": "2025-09-08T10:53:38.936-07:00",
+          "position": 2,
+          "description": "Events API for Clever Secure Sync",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "tq9rr6n61grw",
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "78sj7mpmtcj0",
+      "name": "Users on Google ChromeOS 139 unable to login to Clever",
+      "status": "resolved",
+      "created_at": "2025-08-26T14:22:01.289-07:00",
+      "updated_at": "2025-08-28T16:17:28.451-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-08-28T16:17:28.438-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/xwr3x4bz25w4",
+      "started_at": "2025-08-26T14:22:01.284-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "6qsbxvr9wq5b",
+          "status": "resolved",
+          "body": "Google has resolved this issue, and everything is back to normal. Please update to the ChromeOS 139 version.",
+          "incident_id": "78sj7mpmtcj0",
+          "created_at": "2025-08-28T16:17:28.438-07:00",
+          "updated_at": "2025-08-28T16:17:28.438-07:00",
+          "display_at": "2025-08-28T16:17:28.438-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ncg28xx71swy",
+          "status": "identified",
+          "body": "Google, a service that works with Clever, is experiencing issues with users being unable to login using their Google credentials for those who updated to ChromeOS 139. This is preventing users from being able to login to their Clever account. We are monitoring the issue and will provide status updates as they become available.  \n\nIn the meantime, we advise rolling back to either ChromeOS 138 or earlier until this issue is resolved.",
+          "incident_id": "78sj7mpmtcj0",
+          "created_at": "2025-08-26T14:28:53.533-07:00",
+          "updated_at": "2025-08-26T14:28:53.533-07:00",
+          "display_at": "2025-08-26T14:28:53.533-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "26rxy5rqywc3",
+          "status": "investigating",
+          "body": "Google, a service that works with Clever, is experiencing issues with users being unable to login using their Google credentials for those who updated to ChromeOS 139. This is preventing users from being able to login to their Clever account. We are monitoring the issue and will provide status updates as they become available.",
+          "incident_id": "78sj7mpmtcj0",
+          "created_at": "2025-08-26T14:22:01.388-07:00",
+          "updated_at": "2025-08-26T14:22:01.388-07:00",
+          "display_at": "2025-08-26T14:22:01.388-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "kkg6xbw03z52",
+      "name": "Edtech Analytics displaying incorrect data",
+      "status": "resolved",
+      "created_at": "2025-08-18T18:17:28.466-07:00",
+      "updated_at": "2025-08-25T13:51:31.379-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-08-25T13:51:31.362-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/821lh63qxyj0",
+      "started_at": "2025-08-18T18:17:28.461-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "ln8tdm6twvs8",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "kkg6xbw03z52",
+          "created_at": "2025-08-25T13:51:31.362-07:00",
+          "updated_at": "2025-08-25T13:51:31.362-07:00",
+          "display_at": "2025-08-25T13:51:31.362-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8lh9lzv97z0s",
+          "status": "identified",
+          "body": "We are still working on addressing the issue at this time and will provide an update once Edtech Analytics is operating as normal in displaying correct data.",
+          "incident_id": "kkg6xbw03z52",
+          "created_at": "2025-08-22T11:42:35.630-07:00",
+          "updated_at": "2025-08-22T11:42:35.630-07:00",
+          "display_at": "2025-08-22T11:42:35.630-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "z692gh83fbjv",
+          "status": "identified",
+          "body": "We have identified the error causing Edtech Analytics displaying incorrect data and are currently working to resolve this issue. We are sorry for the issue and will provide an update when Edtech Analytics is operating as normal. Thank you for your patience.",
+          "incident_id": "kkg6xbw03z52",
+          "created_at": "2025-08-20T12:55:16.887-07:00",
+          "updated_at": "2025-08-20T12:55:16.887-07:00",
+          "display_at": "2025-08-20T12:55:16.887-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "sw0rw8sp83mf",
+          "status": "investigating",
+          "body": "Clever is experiencing an issue with Edtech Analytics displaying incorrect data since August 14th. We are investigating the issue and will provide regular status updates.",
+          "incident_id": "kkg6xbw03z52",
+          "created_at": "2025-08-18T18:17:28.534-07:00",
+          "updated_at": "2025-08-18T18:17:28.534-07:00",
+          "display_at": "2025-08-18T18:17:28.534-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5h29zbc9724w",
+          "name": "District Administration Dashboard",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.523-07:00",
+          "updated_at": "2025-08-25T13:51:31.322-07:00",
+          "position": 3,
+          "description": "Administrator dashboard for school districts located at schools.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "3bswzc9txmdg",
+      "name": "District Admins Unable to Access Downloaded Badges from Email",
+      "status": "resolved",
+      "created_at": "2025-08-12T11:57:10.892-07:00",
+      "updated_at": "2025-08-12T13:07:57.922-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-08-12T13:07:53.441-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/txlck82yc3nn",
+      "started_at": "2025-08-12T11:57:10.882-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "g0s6093fd8b2",
+          "status": "resolved",
+          "body": "Our Engineering team found the root cause of the issue regarding District Admins getting an error message when trying to access downloaded Clever Badges from their email and has released a fix for this.\n\nDistrict Admins should now be able to download badges from their email. Please contact support at support.clever.com if you need further assistance!\n\nWe apologize again for any inconvenience this may have caused.",
+          "incident_id": "3bswzc9txmdg",
+          "created_at": "2025-08-12T13:07:53.441-07:00",
+          "updated_at": "2025-08-12T13:07:53.441-07:00",
+          "display_at": "2025-08-12T13:07:53.441-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1dqyvhj8v09q",
+          "status": "investigating",
+          "body": "We are currently investigating the issue regarding District Admins getting an error message when trying to access downloaded Clever Badges from their email. We apologize for any inconvenience this is causing and will update this page as we work to resolve this issue.",
+          "incident_id": "3bswzc9txmdg",
+          "created_at": "2025-08-12T11:57:10.987-07:00",
+          "updated_at": "2025-08-12T11:57:10.987-07:00",
+          "display_at": "2025-08-12T11:57:10.987-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "f9l5j6hwvc2s",
+      "name": "Data not loading in App Dashboard",
+      "status": "resolved",
+      "created_at": "2025-08-05T11:51:17.304-07:00",
+      "updated_at": "2025-08-05T12:32:17.740-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-08-05T12:32:17.726-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/k4kwzt9l6qxq",
+      "started_at": "2025-08-05T11:51:17.297-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "z33x8t5c0ryf",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "f9l5j6hwvc2s",
+          "created_at": "2025-08-05T12:32:17.726-07:00",
+          "updated_at": "2025-08-05T12:32:17.726-07:00",
+          "display_at": "2025-08-05T12:32:17.726-07:00",
+          "affected_components": [
+            {
+              "code": "kzqd4cy32l2b",
+              "name": "Apps Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "pm7hwdsf046h",
+          "status": "identified",
+          "body": "Clever is experiencing an issue where data will not load or update within the App Dashboard. We have identified the error causing the issue and are working on a resolution. We are sorry for the issue and will provide an update when App Dashboard is operating as normal. Thank you for your patience.",
+          "incident_id": "f9l5j6hwvc2s",
+          "created_at": "2025-08-05T11:51:17.397-07:00",
+          "updated_at": "2025-08-05T11:51:17.397-07:00",
+          "display_at": "2025-08-05T11:51:17.397-07:00",
+          "affected_components": [
+            {
+              "code": "kzqd4cy32l2b",
+              "name": "Apps Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "kzqd4cy32l2b",
+          "name": "Apps Dashboard",
+          "status": "operational",
+          "created_at": "2018-05-29T18:02:51.580-07:00",
+          "updated_at": "2025-08-05T12:32:17.697-07:00",
+          "position": 4,
+          "description": "Administrative dashboard for application users located at apps.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "pw4xsgl57zcd",
+      "name": "Infinite Campus OneRoster Sync Error",
+      "status": "resolved",
+      "created_at": "2025-07-23T11:55:17.142-07:00",
+      "updated_at": "2025-07-24T11:08:37.654-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-07-24T11:08:37.636-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/dw3jwfsx3w9m",
+      "started_at": "2025-07-23T11:55:17.135-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "5ksjm7f2qg80",
+          "status": "resolved",
+          "body": "Our engineers have confirmed that the identified resolution will enable districts experiencing this issue with the Infinite Campus OneRoster sync to resume syncing data to Clever. Districts will need to navigate to the Sync Settings page of their Clever District Dashboard and enter their new Infinite Campus OneRoster Base URL in the System Settings field. \n\nFor additional information, please refer to the following Help Center article: https://support.clever.com/hc/s/articles/226677767",
+          "incident_id": "pw4xsgl57zcd",
+          "created_at": "2025-07-24T11:08:37.636-07:00",
+          "updated_at": "2025-07-24T11:08:37.636-07:00",
+          "display_at": "2025-07-24T11:08:37.636-07:00",
+          "affected_components": [
+            {
+              "code": "qp4n99byz2kc",
+              "name": "SIS Sync - Infinite Campus",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "p2fvmlr8m2lb",
+          "status": "identified",
+          "body": "Clever is experiencing an issue with the Infinite Campus OneRoster sync. This issue prevents districts using the Infinite Campus OneRoster sync from being able to sync data to Clever. We have identified that the issue has been caused by an Infinite Campus URL change for districts using the Infinite Campus OneRoster sync. To resolve this issue, districts will need to navigate to the Sync Settings page of their Clever District Dashboard and enter their new Infinite Campus OneRoster Base URL in the System Settings field. \n\nFor additional information, please refer to the following Help Center article: https://support.clever.com/hc/s/articles/226677767",
+          "incident_id": "pw4xsgl57zcd",
+          "created_at": "2025-07-23T11:55:17.215-07:00",
+          "updated_at": "2025-07-23T11:55:17.215-07:00",
+          "display_at": "2025-07-23T11:55:17.215-07:00",
+          "affected_components": [
+            {
+              "code": "qp4n99byz2kc",
+              "name": "SIS Sync - Infinite Campus",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qp4n99byz2kc",
+          "name": "Infinite Campus",
+          "status": "operational",
+          "created_at": "2018-05-29T18:07:43.089-07:00",
+          "updated_at": "2025-07-24T11:08:37.605-07:00",
+          "position": 3,
+          "description": "Clever's automated Infinite Campus Sync",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "pwmmdfgbh6cq",
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "dntmm07h739q",
+      "name": "Users with dual roles unable to login to Clever",
+      "status": "resolved",
+      "created_at": "2025-07-24T06:14:21.327-07:00",
+      "updated_at": "2025-07-24T10:26:55.562-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-07-24T10:26:55.547-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/ty6gtbpd8zw8",
+      "started_at": "2025-07-24T06:14:21.322-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "n0yhnvxs11ll",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "dntmm07h739q",
+          "created_at": "2025-07-24T10:26:55.547-07:00",
+          "updated_at": "2025-07-24T10:26:55.547-07:00",
+          "display_at": "2025-07-24T10:26:55.547-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "j566w3s34pbj",
+          "status": "investigating",
+          "body": "Clever is experiencing an issue impacting users that have dual roles experiencing a login loop when attempting to login to Clever. This is preventing users with dual roles from being able to log into their Clever Portal. We are investigating the issue and will provide regular status updates.",
+          "incident_id": "dntmm07h739q",
+          "created_at": "2025-07-24T06:14:21.399-07:00",
+          "updated_at": "2025-07-24T06:14:21.399-07:00",
+          "display_at": "2025-07-24T06:14:21.399-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "z5ft9h8zjf0k",
+      "name": "Clever Support: Phone service outage",
+      "status": "resolved",
+      "created_at": "2025-07-09T15:24:03.462-07:00",
+      "updated_at": "2025-07-09T15:46:06.720-07:00",
+      "monitoring_at": "2025-07-09T15:38:35.163-07:00",
+      "resolved_at": "2025-07-09T15:46:06.703-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/dnxmy5fkxtmw",
+      "started_at": "2025-07-09T15:24:03.456-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "86lnyzdmxt2s",
+          "status": "resolved",
+          "body": "This incident has been resolved.",
+          "incident_id": "z5ft9h8zjf0k",
+          "created_at": "2025-07-09T15:46:06.703-07:00",
+          "updated_at": "2025-07-09T15:46:06.703-07:00",
+          "display_at": "2025-07-09T15:46:06.703-07:00",
+          "affected_components": [
+            {
+              "code": "4pm78b6tqdj8",
+              "name": "Support",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "wn3645ht31yh",
+          "status": "monitoring",
+          "body": "Mitigation measures were applied by our provider and we are seeing system recovery for phones.",
+          "incident_id": "z5ft9h8zjf0k",
+          "created_at": "2025-07-09T15:38:35.163-07:00",
+          "updated_at": "2025-07-09T15:38:35.163-07:00",
+          "display_at": "2025-07-09T15:38:35.163-07:00",
+          "affected_components": [
+            {
+              "code": "4pm78b6tqdj8",
+              "name": "Support",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "y68s4sf77bfz",
+          "status": "identified",
+          "body": "Clever Support's phone provider is experiencing service issues. We are monitoring the service outage and will provide regular status updates. In the meantime, please submit all support requests via our web form at support.clever.com to ensure our team receives your request.",
+          "incident_id": "z5ft9h8zjf0k",
+          "created_at": "2025-07-09T15:24:03.548-07:00",
+          "updated_at": "2025-07-09T15:24:03.548-07:00",
+          "display_at": "2025-07-09T15:24:03.548-07:00",
+          "affected_components": [
+            {
+              "code": "4pm78b6tqdj8",
+              "name": "Support",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4pm78b6tqdj8",
+          "name": "Support",
+          "status": "operational",
+          "created_at": "2015-01-30T11:15:55.138-08:00",
+          "updated_at": "2025-07-09T15:38:35.132-07:00",
+          "position": 8,
+          "description": "support.clever.com, ticket system, phone support",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "9jdndvrrs0j7",
+      "name": "District-Admin Endpoint not Returning Data",
+      "status": "resolved",
+      "created_at": "2025-07-02T10:45:39.199-07:00",
+      "updated_at": "2025-07-11T06:17:30.613-07:00",
+      "monitoring_at": "2025-07-02T12:51:23.666-07:00",
+      "resolved_at": "2025-07-08T15:39:49.000-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/ck3nn985dhjc",
+      "started_at": "2025-07-02T10:45:39.192-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "0n0ppj2vbjb5",
+          "status": "resolved",
+          "body": "This incident has been resolved.",
+          "incident_id": "9jdndvrrs0j7",
+          "created_at": "2025-07-09T15:39:49.332-07:00",
+          "updated_at": "2025-07-11T06:17:30.589-07:00",
+          "display_at": "2025-07-08T15:39:49.000-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "2crcj7v6wb7z",
+              "name": "Rostering API - Data API",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1yb0z3sq97ck",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "9jdndvrrs0j7",
+          "created_at": "2025-07-02T12:51:23.666-07:00",
+          "updated_at": "2025-07-02T12:51:23.666-07:00",
+          "display_at": "2025-07-02T12:51:23.666-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2crcj7v6wb7z",
+              "name": "Rostering API - Data API",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "cfd52zz3nvxr",
+          "status": "investigating",
+          "body": "Clever is currently experiencing an issue where the district-admin endpoint is not returning data for some districts. In addition, this may be leading to a subset of District Admins not being able to access some learning applications. We are currently investigating this issue and will provide prompt updates when we have them!",
+          "incident_id": "9jdndvrrs0j7",
+          "created_at": "2025-07-02T10:45:39.290-07:00",
+          "updated_at": "2025-07-02T10:45:39.290-07:00",
+          "display_at": "2025-07-02T10:45:39.290-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "2crcj7v6wb7z",
+              "name": "Rostering API - Data API",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "2crcj7v6wb7z",
+          "name": "Data API",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.503-07:00",
+          "updated_at": "2025-07-09T15:39:49.276-07:00",
+          "position": 1,
+          "description": "Data API for Clever Secure Sync",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "tq9rr6n61grw",
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "yv26411jyrvt",
+      "name": "Clever Portal Login Issue",
+      "status": "resolved",
+      "created_at": "2025-05-22T05:03:13.449-07:00",
+      "updated_at": "2025-05-22T11:41:35.173-07:00",
+      "monitoring_at": "2025-05-22T05:23:43.198-07:00",
+      "resolved_at": "2025-05-22T11:41:35.126-07:00",
+      "impact": "critical",
+      "shortlink": "https://stspg.io/j0d711bm7fzb",
+      "started_at": "2025-05-22T05:03:13.444-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "cx4djxyrtydn",
+          "status": "resolved",
+          "body": "Users may have experienced login issues to the Clever Portal today between 4:25am - 5:04am PT. In addition, we discovered users may have experienced issues with using the District Search today between 4:52am - 11:18am PT. Both of these issues are resolved and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "yv26411jyrvt",
+          "created_at": "2025-05-22T11:41:35.126-07:00",
+          "updated_at": "2025-05-22T11:41:35.126-07:00",
+          "display_at": "2025-05-22T11:41:35.126-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "ywnvg49fcg8x",
+          "status": "monitoring",
+          "body": "We have addressed the issue and are currently seeing improvements. We will continue to monitor for further errors and notify once the incident is completely resolved.",
+          "incident_id": "yv26411jyrvt",
+          "created_at": "2025-05-22T05:23:43.198-07:00",
+          "updated_at": "2025-05-22T05:23:43.198-07:00",
+          "display_at": "2025-05-22T05:23:43.198-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "major_outage",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4xh410v57cfg",
+          "status": "investigating",
+          "body": "Clever is currently experiencing an issue with users accessing Clever via the Clever Portal. This is preventing users from being able to login and access Clever. We are currently investigating the issue and will provide regular status updates.",
+          "incident_id": "yv26411jyrvt",
+          "created_at": "2025-05-22T05:03:13.538-07:00",
+          "updated_at": "2025-05-22T05:03:13.538-07:00",
+          "display_at": "2025-05-22T05:03:13.538-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "2h57fsxtpng3",
+      "name": "MFA Authentication Issues",
+      "status": "resolved",
+      "created_at": "2025-04-22T06:05:59.000-07:00",
+      "updated_at": "2025-04-22T09:47:47.493-07:00",
+      "monitoring_at": "2025-04-22T08:03:31.155-07:00",
+      "resolved_at": "2025-04-22T09:47:47.477-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/4dzlq0bhdm8s",
+      "started_at": "2025-04-22T06:05:59.000-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "m3ns2w8mj33t",
+          "status": "resolved",
+          "body": "This incident has been resolved.",
+          "incident_id": "2h57fsxtpng3",
+          "created_at": "2025-04-22T09:47:47.477-07:00",
+          "updated_at": "2025-04-22T09:47:47.477-07:00",
+          "display_at": "2025-04-22T09:47:47.477-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "t7xcvslmzj5w",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "2h57fsxtpng3",
+          "created_at": "2025-04-22T08:03:31.155-07:00",
+          "updated_at": "2025-04-22T08:03:31.155-07:00",
+          "display_at": "2025-04-22T08:03:31.155-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "jnxq2012qw14",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "2h57fsxtpng3",
+          "created_at": "2025-04-22T06:40:25.852-07:00",
+          "updated_at": "2025-04-22T06:40:25.852-07:00",
+          "display_at": "2025-04-22T06:40:25.852-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4t1v2105p3j4",
+          "status": "investigating",
+          "body": "Clever is currently experiencing an issue where those who are using AT&T are not receiving MFA texts to fully authenticate. While we are still investigating the issue, we can confirm that a solid workaround for AT&T users is to use a voice call to authenticate. We will provide regular status updates as we further investigate and identify more.",
+          "incident_id": "2h57fsxtpng3",
+          "created_at": "2025-04-22T06:05:59.985-07:00",
+          "updated_at": "2025-04-22T07:28:03.763-07:00",
+          "display_at": "2025-04-22T06:05:59.000-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "src6yx8zjw09",
+      "name": "PowerSchool Plugin 401 Error",
+      "status": "resolved",
+      "created_at": "2025-04-07T09:06:03.305-07:00",
+      "updated_at": "2025-04-10T09:40:30.042-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-04-10T09:40:30.023-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/df1j4tfd9bkf",
+      "started_at": "2025-04-07T09:06:03.296-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "9z0bdlh703gk",
+          "status": "resolved",
+          "body": "Districts syncing to Clever via the PowerSchool Plugin are hitting a 401 installation error. Our team is currently investigating the issue. As a current workaround, districts can resolve the issue by deleting the old plugin and reinstall an updated version.\n\nTo resolve the error on your PowerSchool Plugin sync, please follow these steps:\n\n1. Delete the existing plugin from PowerSchool on your Plugin Management page. \n2. Download the latest version of the plugin for your Clever sync from the Sync \u003E Settings page of your Clever Dashboard. \n3. Re-install the plugin from scratch using the instructions available here: https://support.clever.com/hc/s/articles/000001590?language=en_US#setup",
+          "incident_id": "src6yx8zjw09",
+          "created_at": "2025-04-10T09:40:30.023-07:00",
+          "updated_at": "2025-04-10T09:40:30.023-07:00",
+          "display_at": "2025-04-10T09:40:30.023-07:00",
+          "affected_components": [
+            {
+              "code": "ch1x0r8cjl60",
+              "name": "SIS Sync - Powerschool",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "rzpd6pt1p9n1",
+          "status": "identified",
+          "body": "We learned PowerSchool recently made changes as part of ongoing server upgrades which impacted the credentials used by the PowerSchool plugin. These credentials are now likely invalid, which means districts on the PowerSchool Plugin sync are not working as expected.\n\nWhat you need to do as soon as possible to restore your sync:\n\n1. Delete the existing Clever plugin from your PowerSchool Plugin Management page.\n2. Download the latest version of the plugin from the Sync \u003E Settings page in your Clever Dashboard. This will generate new credentials and securely share them with Clever.\n3. Re-install the plugin using these instructions. \n\nClever has sent out an email to all impacted districts. If you have any questions, please reach out to us at support.clever.com",
+          "incident_id": "src6yx8zjw09",
+          "created_at": "2025-04-09T08:33:48.008-07:00",
+          "updated_at": "2025-04-09T08:33:48.008-07:00",
+          "display_at": "2025-04-09T08:33:48.008-07:00",
+          "affected_components": [
+            {
+              "code": "ch1x0r8cjl60",
+              "name": "SIS Sync - Powerschool",
+              "old_status": "major_outage",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "x5fkhb3s4fl7",
+          "status": "investigating",
+          "body": "Districts syncing to Clever via the PowerSchool Plugin are hitting a 401 installation error. Our team is currently investigating the issue. As a current workaround, districts can resolve the issue by deleting the old plugin and reinstall an updated version.\n\nTo resolve the error on your PowerSchool Plugin sync, please follow these steps:\n\n1. Delete the existing plugin from PowerSchool on your Plugin Management page. \n2. Download the latest version of the plugin for your Clever sync from the Sync \u003E Settings page of your Clever Dashboard. \n3. Re-install the plugin from scratch using the instructions available here: https://support.clever.com/hc/s/articles/000001590?language=en_US#setup\n\nWe apologize for the inconvenience and will be posting updates as soon as we can.",
+          "incident_id": "src6yx8zjw09",
+          "created_at": "2025-04-07T09:06:03.407-07:00",
+          "updated_at": "2025-04-07T09:06:03.407-07:00",
+          "display_at": "2025-04-07T09:06:03.407-07:00",
+          "affected_components": [
+            {
+              "code": "ch1x0r8cjl60",
+              "name": "SIS Sync - Powerschool",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ch1x0r8cjl60",
+          "name": "Powerschool",
+          "status": "operational",
+          "created_at": "2018-05-29T18:06:48.589-07:00",
+          "updated_at": "2025-04-10T09:40:29.984-07:00",
+          "position": 5,
+          "description": "Clever's automated Powerschool Sync",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "pwmmdfgbh6cq",
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "7nw90gq36b8w",
+      "name": "Clever Support: Phone service outage",
+      "status": "resolved",
+      "created_at": "2025-03-31T10:00:09.934-07:00",
+      "updated_at": "2025-03-31T14:43:00.513-07:00",
+      "monitoring_at": "2025-03-31T11:27:33.000-07:00",
+      "resolved_at": "2025-03-31T14:43:00.479-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/hlwycd8l7msz",
+      "started_at": "2025-03-31T10:00:09.928-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "bv19qfv3wklg",
+          "status": "resolved",
+          "body": "Clever Support's phone provider has resolved the outage and phone service is restored. If you encounter any further connection issues, please submit a support request with our team at support.clever.com.",
+          "incident_id": "7nw90gq36b8w",
+          "created_at": "2025-03-31T14:43:00.479-07:00",
+          "updated_at": "2025-03-31T14:43:00.479-07:00",
+          "display_at": "2025-03-31T14:43:00.479-07:00",
+          "affected_components": [
+            {
+              "code": "4pm78b6tqdj8",
+              "name": "Support",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "tm6fw71r2ppm",
+          "status": "monitoring",
+          "body": "A fix has been implemented by our phone service provider, and inbound calls are now successfully reaching our team. We are actively monitoring the service to ensure continued stability.",
+          "incident_id": "7nw90gq36b8w",
+          "created_at": "2025-03-31T11:27:33.638-07:00",
+          "updated_at": "2025-03-31T11:46:48.625-07:00",
+          "display_at": "2025-03-31T11:27:33.000-07:00",
+          "affected_components": [
+            {
+              "code": "4pm78b6tqdj8",
+              "name": "Support",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "l9r8jn4jnbt8",
+          "status": "investigating",
+          "body": "Clever Support’s phone provider is experiencing service issues. We are monitoring the service outage and will provide regular status updates. In the meantime, please submit all support requests via our web form at support.clever.com to ensure our team receives your request!",
+          "incident_id": "7nw90gq36b8w",
+          "created_at": "2025-03-31T10:00:10.023-07:00",
+          "updated_at": "2025-03-31T10:00:10.023-07:00",
+          "display_at": "2025-03-31T10:00:10.023-07:00",
+          "affected_components": [
+            {
+              "code": "4pm78b6tqdj8",
+              "name": "Support",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4pm78b6tqdj8",
+          "name": "Support",
+          "status": "operational",
+          "created_at": "2015-01-30T11:15:55.138-08:00",
+          "updated_at": "2025-07-09T15:38:35.132-07:00",
+          "position": 8,
+          "description": "support.clever.com, ticket system, phone support",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "lnb86fzn0lqc",
+      "name": "Issue impacting user logins",
+      "status": "resolved",
+      "created_at": "2025-02-25T12:08:35.000-08:00",
+      "updated_at": "2025-02-25T12:42:08.196-08:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-02-25T12:08:35.000-08:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/z8zpy8vzht7q",
+      "started_at": "2025-02-25T12:08:35.000-08:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "mqmzjkhc8hrp",
+          "status": "resolved",
+          "body": "Users may have recently experienced login issues to the Clever Portal on 2/25/2025 between 11:44 AM and 11:51 am PT. This issue was resolved, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "lnb86fzn0lqc",
+          "created_at": "2025-02-25T12:08:35.353-08:00",
+          "updated_at": "2025-02-25T12:42:08.186-08:00",
+          "display_at": "2025-02-25T12:08:35.000-08:00",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "reminder_intervals": null
+    },
+    {
+      "id": "98f1mdnt9m6j",
+      "name": "Clever Portal Login Issues",
+      "status": "resolved",
+      "created_at": "2025-02-14T11:55:44.238-08:00",
+      "updated_at": "2025-02-14T11:55:44.292-08:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-02-14T11:55:44.282-08:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/g368133mq5n3",
+      "started_at": "2025-02-14T11:55:44.235-08:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "x4hlqbwknz7d",
+          "status": "resolved",
+          "body": "Users may have experienced login issues to the Clever Portal on 2/12/2025 between 9:46 pm - 9:49 pm PT and 2/13/2025 between 10:51 pm - 10:52 pm PT. This issue was resolved and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "98f1mdnt9m6j",
+          "created_at": "2025-02-14T11:55:44.282-08:00",
+          "updated_at": "2025-02-14T11:55:44.282-08:00",
+          "display_at": "2025-02-14T11:55:44.282-08:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "627dq9k1nk26",
+      "name": "District Admins unable to adjust sharing permissions for connected apps",
+      "status": "resolved",
+      "created_at": "2025-01-30T07:30:34.760-08:00",
+      "updated_at": "2025-01-30T09:06:21.703-08:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-01-30T09:06:21.679-08:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/kbwy454lsvl9",
+      "started_at": "2025-01-30T07:30:34.755-08:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "hd907973w2hb",
+          "status": "resolved",
+          "body": "This incident has been resolved.",
+          "incident_id": "627dq9k1nk26",
+          "created_at": "2025-01-30T09:06:21.679-08:00",
+          "updated_at": "2025-01-30T09:06:21.679-08:00",
+          "display_at": "2025-01-30T09:06:21.679-08:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bgh7j2zsydq2",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "627dq9k1nk26",
+          "created_at": "2025-01-30T07:41:04.062-08:00",
+          "updated_at": "2025-01-30T07:41:04.062-08:00",
+          "display_at": "2025-01-30T07:41:04.062-08:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lmgxdh7918cv",
+          "status": "investigating",
+          "body": "Clever is experiencing issues with District Administrators' attempts to adjust their sharing permissions. We’re investigating the issue and will share updates on our status page (status.clever.com). We’re sorry for the inconvenience and thank you for your patience!",
+          "incident_id": "627dq9k1nk26",
+          "created_at": "2025-01-30T07:30:34.840-08:00",
+          "updated_at": "2025-01-30T07:30:34.840-08:00",
+          "display_at": "2025-01-30T07:30:34.840-08:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5h29zbc9724w",
+          "name": "District Administration Dashboard",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.523-07:00",
+          "updated_at": "2025-08-25T13:51:31.322-07:00",
+          "position": 3,
+          "description": "Administrator dashboard for school districts located at schools.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "7twhh832chwk",
+      "name": "School Tech Leads receiving an error when accessing user accounts",
+      "status": "resolved",
+      "created_at": "2025-01-09T06:18:59.451-08:00",
+      "updated_at": "2025-01-10T06:15:16.875-08:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-01-10T06:15:16.859-08:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tc7676nm12n3",
+      "started_at": "2025-01-09T06:18:59.446-08:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "xvqch7drd1w0",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "7twhh832chwk",
+          "created_at": "2025-01-10T06:15:16.859-08:00",
+          "updated_at": "2025-01-10T06:15:16.859-08:00",
+          "display_at": "2025-01-10T06:15:16.859-08:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "724lkfcvhnt6",
+          "status": "investigating",
+          "body": "Clever is experiencing an issue where School Tech Leads are receiving an error when trying to access student or teacher accounts from the District Dashboard. This is preventing School Tech Leads from accessing student and teacher accounts. We are investigating the issue and will provide regular status updates.",
+          "incident_id": "7twhh832chwk",
+          "created_at": "2025-01-09T06:18:59.537-08:00",
+          "updated_at": "2025-01-09T06:18:59.537-08:00",
+          "display_at": "2025-01-09T06:18:59.537-08:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5h29zbc9724w",
+          "name": "District Administration Dashboard",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.523-07:00",
+          "updated_at": "2025-08-25T13:51:31.322-07:00",
+          "position": 3,
+          "description": "Administrator dashboard for school districts located at schools.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "zcfnk72tlpv2",
+      "name": "STLs receiving an error when accessing user accounts",
+      "status": "resolved",
+      "created_at": "2025-01-08T08:03:53.718-08:00",
+      "updated_at": "2025-01-08T14:32:25.295-08:00",
+      "monitoring_at": null,
+      "resolved_at": "2025-01-08T14:32:25.282-08:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/3jg6j04jl949",
+      "started_at": "2025-01-08T08:03:53.713-08:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "lzwyvx1f6x26",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "zcfnk72tlpv2",
+          "created_at": "2025-01-08T14:32:25.282-08:00",
+          "updated_at": "2025-01-08T14:32:25.282-08:00",
+          "display_at": "2025-01-08T14:32:25.282-08:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "f2wbyhm2wl3k",
+          "status": "investigating",
+          "body": "Clever is experiencing an issue where STLS are receiving an error when trying to access student or teacher accounts from the District Dashboard. This is preventing STLs from accessing student and teacher accounts. We are investigating the issue and will provide regular status updates.",
+          "incident_id": "zcfnk72tlpv2",
+          "created_at": "2025-01-08T08:03:53.783-08:00",
+          "updated_at": "2025-01-08T08:03:53.783-08:00",
+          "display_at": "2025-01-08T08:03:53.783-08:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5h29zbc9724w",
+          "name": "District Administration Dashboard",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.523-07:00",
+          "updated_at": "2025-08-25T13:51:31.322-07:00",
+          "position": 3,
+          "description": "Administrator dashboard for school districts located at schools.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "8xkbwnk7v4l5",
+      "name": "Clever Portal Announcement Issues for Teachers",
+      "status": "resolved",
+      "created_at": "2024-11-26T09:16:00.793-08:00",
+      "updated_at": "2024-11-26T11:54:05.446-08:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-11-26T11:54:05.429-08:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/v93hbc1f29xs",
+      "started_at": "2024-11-26T09:16:00.786-08:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "3ph310357hxb",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "8xkbwnk7v4l5",
+          "created_at": "2024-11-26T11:54:05.429-08:00",
+          "updated_at": "2024-11-26T11:54:05.429-08:00",
+          "display_at": "2024-11-26T11:54:05.429-08:00",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6f63gb1x8c3r",
+          "status": "identified",
+          "body": "Clever has identified the root cause of the issue with Announcements not loading for teachers in the Clever Portal. We will continue to monitor the issue until fully resolved and will provide regular status updates.",
+          "incident_id": "8xkbwnk7v4l5",
+          "created_at": "2024-11-26T10:17:01.889-08:00",
+          "updated_at": "2024-11-26T10:17:01.889-08:00",
+          "display_at": "2024-11-26T10:17:01.889-08:00",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1qnb4y29jr75",
+          "status": "investigating",
+          "body": "Clever is currently experiencing an issue where Announcements in the Clever Portal are not loading for teachers. We are investigating the issue and will provide regular status updates.",
+          "incident_id": "8xkbwnk7v4l5",
+          "created_at": "2024-11-26T09:16:00.829-08:00",
+          "updated_at": "2024-11-26T09:16:00.829-08:00",
+          "display_at": "2024-11-26T09:16:00.829-08:00",
+          "affected_components": null,
+          "deliver_notifications": false,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [],
+      "reminder_intervals": null
+    },
+    {
+      "id": "yc5rmxyvmw2b",
+      "name": "Clever Portal Login Issues",
+      "status": "resolved",
+      "created_at": "2024-11-25T12:38:20.704-08:00",
+      "updated_at": "2024-11-25T12:38:20.779-08:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-11-25T12:38:20.768-08:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/d5f916k3fpxs",
+      "started_at": "2024-11-25T12:38:20.701-08:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "0hgqbrk4tc03",
+          "status": "resolved",
+          "body": "Users may have experienced login issues to the Clever Portal Today (11/25/2024) between 11:02am - 11:14am PT.  This issue was resolved and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "yc5rmxyvmw2b",
+          "created_at": "2024-11-25T12:38:20.768-08:00",
+          "updated_at": "2024-11-25T12:38:20.768-08:00",
+          "display_at": "2024-11-25T12:38:20.768-08:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "w53rh8gvymfq",
+      "name": "Clever Portal Login Issues",
+      "status": "resolved",
+      "created_at": "2024-11-25T11:05:10.485-08:00",
+      "updated_at": "2024-11-25T11:43:08.247-08:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-11-25T11:43:08.229-08:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/f044zy25sbdm",
+      "started_at": "2024-11-25T11:05:10.477-08:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "77gl493rrqsf",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "w53rh8gvymfq",
+          "created_at": "2024-11-25T11:43:08.229-08:00",
+          "updated_at": "2024-11-25T11:43:08.229-08:00",
+          "display_at": "2024-11-25T11:43:08.229-08:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "nmp7xx8cncx1",
+          "status": "investigating",
+          "body": "Clever is currently experiencing an issue with users accessing Clever via the Clever Portal. This is preventing users from being able to login and access Clever. We are currently investigating the issue and will provide regular status updates.",
+          "incident_id": "w53rh8gvymfq",
+          "created_at": "2024-11-25T11:05:10.582-08:00",
+          "updated_at": "2024-11-25T11:05:10.582-08:00",
+          "display_at": "2024-11-25T11:05:10.582-08:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "g93tzqlmwt7b",
+      "name": "Clever Portal Login Issues using iOS Clever app",
+      "status": "resolved",
+      "created_at": "2024-10-30T08:37:44.152-07:00",
+      "updated_at": "2024-10-30T08:37:44.216-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-10-30T08:37:44.205-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/s6bwdjk2lrhq",
+      "started_at": "2024-10-30T08:37:44.149-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "g6qxl6m75kfz",
+          "status": "resolved",
+          "body": "Users may have experienced issues logging into Clever using the iOS Clever app between Tuesday, October 29th at 1:14pm PT - Wednesday, October 30th at 7:28am PT. This issue was resolved and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com",
+          "incident_id": "g93tzqlmwt7b",
+          "created_at": "2024-10-30T08:37:44.205-07:00",
+          "updated_at": "2024-10-30T08:37:44.205-07:00",
+          "display_at": "2024-10-30T08:37:44.205-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "z0jtbrc3lhxw",
+      "name": "Clever iOS app Badge login issues",
+      "status": "resolved",
+      "created_at": "2024-09-18T16:05:50.000-07:00",
+      "updated_at": "2024-10-28T11:26:29.240-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-10-28T11:26:29.219-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/14prz59rz6zc",
+      "started_at": "2024-09-18T16:05:50.000-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "nb916znfkyjm",
+          "status": "resolved",
+          "body": "Apple has released iOS 18.1 and Badge scanning in the Clever iOS app is back to normal. To resolve this issue for your district, please upgrade to iOS 18.1.\n\nIf you experience any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "z0jtbrc3lhxw",
+          "created_at": "2024-10-28T11:26:29.219-07:00",
+          "updated_at": "2024-10-28T11:26:29.219-07:00",
+          "display_at": "2024-10-28T11:26:29.219-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "9nqq8vj5n3ws",
+          "status": "identified",
+          "body": "Clever is aware of an issue where users with 7th generation iPads are unable to scan Badges in the Clever iOS app after updating to either iOS 18 or 18.01. We have verified that Badge scanning works with iOS 18.1 beta 2 and anticipate that when 18.1 is released it will address the issue.\n\nIf you have upgraded to iOS 18 or 18.01 and are experiencing issues with the Clever app, first uninstall the Clever iOS app and then use a browser, such as Safari, to log in at clever.com/badges.",
+          "incident_id": "z0jtbrc3lhxw",
+          "created_at": "2024-10-07T08:19:22.060-07:00",
+          "updated_at": "2024-10-07T08:19:22.060-07:00",
+          "display_at": "2024-10-07T08:19:22.060-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "8g7gbdvstqtp",
+          "status": "identified",
+          "body": "Clever is aware of an issue where users with 7th generation iPads are unable to scan Badges in the Clever iOS app after updating to either iOS 18 or 18.01. Our engineers are currently investigating this issue, and we will provide updates as soon as we have more information.\n\nIf you have upgraded to iOS 18 or 18.01 and are experiencing issues with the Clever app, first uninstall the Clever iOS app and then use a browser, such as Safari, to log in at clever.com/badges.",
+          "incident_id": "z0jtbrc3lhxw",
+          "created_at": "2024-10-04T12:20:06.271-07:00",
+          "updated_at": "2024-10-04T12:20:06.271-07:00",
+          "display_at": "2024-10-04T12:20:06.271-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "6h37xk12ng99",
+          "status": "identified",
+          "body": "Clever is aware of an issue where users with 7th generation iPads are unable to scan Badges in the Clever iOS app after updating to iOS 18. Our engineers are currently investigating this issue, and we will provide updates as soon as we have more information.\n\nIf you have upgraded to iOS 18 and are experiencing issues with the Clever app, first uninstall the Clever iOS app and then use a browser, such as Safari, to log in at clever.com/badges.",
+          "incident_id": "z0jtbrc3lhxw",
+          "created_at": "2024-09-20T14:38:00.405-07:00",
+          "updated_at": "2024-09-20T14:38:00.405-07:00",
+          "display_at": "2024-09-20T14:38:00.405-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "n1w0prhg77dt",
+          "status": "investigating",
+          "body": "Clever is aware of an issue where users with 7th generation iPads are unable to scan Badges in the Clever iOS app after updating to iOS 18. Our engineers are currently investigating this issue, and we will provide updates as soon as we have more information.\n\nIf you have upgraded to iOS 18 and are experiencing issues with the Clever app, we recommend temporarily uninstalling the Clever app and using a browser, such as Safari, to log in to Clever.",
+          "incident_id": "z0jtbrc3lhxw",
+          "created_at": "2024-09-18T16:05:50.162-07:00",
+          "updated_at": "2024-09-18T20:11:44.782-07:00",
+          "display_at": "2024-09-18T16:05:50.000-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "pg8yf7mr3hyk",
+      "name": "Clever Portal Issue",
+      "status": "resolved",
+      "created_at": "2024-10-25T06:11:31.702-07:00",
+      "updated_at": "2024-10-25T07:31:18.986-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-10-25T07:31:15.248-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/dq1zzdcnwqp3",
+      "started_at": "2024-10-25T06:11:31.694-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "l46gdhykr69x",
+          "status": "resolved",
+          "body": "The issue with Clever Admins not being able to access their Clever Portal has now been resolved. All users should be able to access their Clever Portal. Please contact Clever Support at support.clever.com if you are still having issues. Thank you for your patience!",
+          "incident_id": "pg8yf7mr3hyk",
+          "created_at": "2024-10-25T07:31:15.248-07:00",
+          "updated_at": "2024-10-25T07:31:15.248-07:00",
+          "display_at": "2024-10-25T07:31:15.248-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "818m4yg02154",
+          "status": "investigating",
+          "body": "Clever is currently experiencing an issue with Clever Admins accessing their Clever Portal from their Dashboard. It does not appear to be impacting students and teachers from accessing their Clever Portals. We are currently investigating the issue and will provide regular status updates.",
+          "incident_id": "pg8yf7mr3hyk",
+          "created_at": "2024-10-25T06:11:31.881-07:00",
+          "updated_at": "2024-10-25T06:11:31.881-07:00",
+          "display_at": "2024-10-25T06:11:31.881-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "8zq43rvyg57s",
+      "name": "Clever Portal Login Issues",
+      "status": "resolved",
+      "created_at": "2024-10-18T06:56:51.142-07:00",
+      "updated_at": "2024-10-18T13:44:41.356-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-10-18T13:44:38.041-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/mz1dy4yrclfv",
+      "started_at": "2024-10-18T06:56:51.138-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "76y2zx0sb5mb",
+          "status": "resolved",
+          "body": "This issue was resolved and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "8zq43rvyg57s",
+          "created_at": "2024-10-18T13:44:38.041-07:00",
+          "updated_at": "2024-10-18T13:44:38.041-07:00",
+          "display_at": "2024-10-18T13:44:38.041-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "083cnw28gvln",
+          "status": "investigating",
+          "body": "Our Engineering team recently released a fix for this issue and we are currently monitoring the situation. Thank you for your continued patience!",
+          "incident_id": "8zq43rvyg57s",
+          "created_at": "2024-10-18T08:02:21.271-07:00",
+          "updated_at": "2024-10-18T08:02:21.271-07:00",
+          "display_at": "2024-10-18T08:02:21.271-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xsxht4jbv0mt",
+          "status": "investigating",
+          "body": "Clever is currently experiencing an issue with users accessing Clever via the Clever Portal. This is preventing users from being able to login and access Clever. We are currently investigating the issue and will provide regular status updates.",
+          "incident_id": "8zq43rvyg57s",
+          "created_at": "2024-10-18T06:56:51.207-07:00",
+          "updated_at": "2024-10-18T06:56:51.207-07:00",
+          "display_at": "2024-10-18T06:56:51.207-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "dzrzltx80tbs",
+      "name": "Clever Portal Login Issues",
+      "status": "resolved",
+      "created_at": "2024-10-07T12:30:08.915-07:00",
+      "updated_at": "2024-10-07T12:30:08.961-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-10-07T12:30:08.952-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/c2pz2xb5cndc",
+      "started_at": "2024-10-07T12:30:08.912-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "9kdtrj90vzjj",
+          "status": "resolved",
+          "body": "Users may have experienced login issues to the Clever Portal 10/07/24 between 11:24am - 11:46am PT. This issue was resolved and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "dzrzltx80tbs",
+          "created_at": "2024-10-07T12:30:08.952-07:00",
+          "updated_at": "2024-10-07T12:30:08.952-07:00",
+          "display_at": "2024-10-07T12:30:08.952-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "5zcgq84f5v8w",
+      "name": "Users Experiencing Login Issues with Clever Portal",
+      "status": "resolved",
+      "created_at": "2024-10-07T11:42:52.288-07:00",
+      "updated_at": "2024-10-07T11:58:06.040-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-10-07T11:58:06.024-07:00",
+      "impact": "critical",
+      "shortlink": "https://stspg.io/y94nxws2twyt",
+      "started_at": "2024-10-07T11:42:52.282-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "qwl0sbwbqk5c",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "5zcgq84f5v8w",
+          "created_at": "2024-10-07T11:58:06.024-07:00",
+          "updated_at": "2024-10-07T11:58:06.024-07:00",
+          "display_at": "2024-10-07T11:58:06.024-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2nprjf5h3shz",
+          "status": "investigating",
+          "body": "Clever is currently experiencing an issue with users accessing Clever via the Clever Portal. This is preventing users from being able to login and access Clever. We are currently investigating the issue and will provide regular status updates.",
+          "incident_id": "5zcgq84f5v8w",
+          "created_at": "2024-10-07T11:42:52.372-07:00",
+          "updated_at": "2024-10-07T11:42:52.372-07:00",
+          "display_at": "2024-10-07T11:42:52.372-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "44vbrjhgpr9m",
+      "name": "Intermittent Errors within Clever",
+      "status": "resolved",
+      "created_at": "2024-09-26T09:16:50.065-07:00",
+      "updated_at": "2024-09-26T13:37:51.933-07:00",
+      "monitoring_at": "2024-09-26T09:53:18.255-07:00",
+      "resolved_at": "2024-09-26T13:37:51.917-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/spxysn0zy0c2",
+      "started_at": "2024-09-26T09:16:50.060-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "fl4sgk0fcg64",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "44vbrjhgpr9m",
+          "created_at": "2024-09-26T13:37:51.917-07:00",
+          "updated_at": "2024-09-26T13:37:51.917-07:00",
+          "display_at": "2024-09-26T13:37:51.917-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "30hcw2p1jz72",
+          "status": "monitoring",
+          "body": "The intermittent errors within the Clever product for all user types is beginning to subside. We will continue to monitor the issue until fully resolved and will provide regular status updates.",
+          "incident_id": "44vbrjhgpr9m",
+          "created_at": "2024-09-26T09:53:18.255-07:00",
+          "updated_at": "2024-09-26T09:53:18.255-07:00",
+          "display_at": "2024-09-26T09:53:18.255-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "1xr60mgyr8lt",
+          "status": "investigating",
+          "body": "Clever is experiencing intermittent errors within the Clever product for all user types. We’re investigating the issue and will provide regular status updates.",
+          "incident_id": "44vbrjhgpr9m",
+          "created_at": "2024-09-26T09:16:50.139-07:00",
+          "updated_at": "2024-09-26T09:16:50.139-07:00",
+          "display_at": "2024-09-26T09:16:50.139-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5h29zbc9724w",
+          "name": "District Administration Dashboard",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.523-07:00",
+          "updated_at": "2025-08-25T13:51:31.322-07:00",
+          "position": 3,
+          "description": "Administrator dashboard for school districts located at schools.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "xv0yzfjjd25t",
+      "name": "In-product message visible to inapplicable districts",
+      "status": "resolved",
+      "created_at": "2024-09-24T07:07:24.447-07:00",
+      "updated_at": "2024-09-24T08:39:32.974-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-09-24T08:39:32.960-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/rnv9cftll8sn",
+      "started_at": "2024-09-24T07:07:24.442-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "wzghb80xtr5j",
+          "status": "resolved",
+          "body": "This in-product message is no longer visible for districts that do not have Clever Passwords. This issue has been resolved and we appreciate your patience!",
+          "incident_id": "xv0yzfjjd25t",
+          "created_at": "2024-09-24T08:39:32.960-07:00",
+          "updated_at": "2024-09-24T08:39:32.960-07:00",
+          "display_at": "2024-09-24T08:39:32.960-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "w99wl56zd7kd",
+          "status": "investigating",
+          "body": "An in-product message was created for user profile pages that were meant to show if a user had a Clever Passwords account provisioned by IDM. However, we are noticing the message is visible to districts that don't have Clever Passwords at all.\n\nOur engineers are working to resolve the error and will provide regular status updates! In the meantime, please feel free to ignore that alert.",
+          "incident_id": "xv0yzfjjd25t",
+          "created_at": "2024-09-24T07:07:24.501-07:00",
+          "updated_at": "2024-09-24T07:07:24.501-07:00",
+          "display_at": "2024-09-24T07:07:24.501-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "pqzbw1bjpmyg",
+      "name": "Clever Portal Login Issues",
+      "status": "resolved",
+      "created_at": "2024-09-12T12:35:06.695-07:00",
+      "updated_at": "2024-09-12T12:35:06.781-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-09-12T12:35:06.772-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/0fchy0grvj86",
+      "started_at": "2024-09-12T12:35:06.687-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "0tn1lccmd7h4",
+          "status": "resolved",
+          "body": "Users may have experienced login issues to the Clever Portal today between 10:50am - 11:15am PT.  This issue was resolved and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "pqzbw1bjpmyg",
+          "created_at": "2024-09-12T12:35:06.772-07:00",
+          "updated_at": "2024-09-12T12:35:06.772-07:00",
+          "display_at": "2024-09-12T12:35:06.772-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "khx5hw7jq394",
+      "name": "Teams Page not Loading in District Dashboard",
+      "status": "resolved",
+      "created_at": "2024-09-12T10:13:26.389-07:00",
+      "updated_at": "2024-09-12T12:01:19.494-07:00",
+      "monitoring_at": "2024-09-12T11:02:10.614-07:00",
+      "resolved_at": "2024-09-12T12:01:19.479-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/cr8hmhbsgls8",
+      "started_at": "2024-09-12T10:13:26.384-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "dnv709x0vs3r",
+          "status": "resolved",
+          "body": "This incident has been resolved.",
+          "incident_id": "khx5hw7jq394",
+          "created_at": "2024-09-12T12:01:19.479-07:00",
+          "updated_at": "2024-09-12T12:01:19.479-07:00",
+          "display_at": "2024-09-12T12:01:19.479-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "462yx366j1v8",
+          "status": "monitoring",
+          "body": "A fix has been implemented and we are monitoring the results.",
+          "incident_id": "khx5hw7jq394",
+          "created_at": "2024-09-12T11:02:10.614-07:00",
+          "updated_at": "2024-09-12T11:02:10.614-07:00",
+          "display_at": "2024-09-12T11:02:10.614-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "pmgzw64brp0q",
+          "status": "identified",
+          "body": "The issue has been identified and a fix is being implemented.",
+          "incident_id": "khx5hw7jq394",
+          "created_at": "2024-09-12T10:33:20.183-07:00",
+          "updated_at": "2024-09-12T10:33:20.183-07:00",
+          "display_at": "2024-09-12T10:33:20.183-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hy1t0r8rgccs",
+          "status": "investigating",
+          "body": "Clever is experiencing an issue in the District Dashboard where the Team folder is not loading. Please note that our team is currently investigating the issue and it will be mitigated shortly!",
+          "incident_id": "khx5hw7jq394",
+          "created_at": "2024-09-12T10:13:26.473-07:00",
+          "updated_at": "2024-09-12T10:13:26.473-07:00",
+          "display_at": "2024-09-12T10:13:26.473-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5h29zbc9724w",
+          "name": "District Administration Dashboard",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.523-07:00",
+          "updated_at": "2025-08-25T13:51:31.322-07:00",
+          "position": 3,
+          "description": "Administrator dashboard for school districts located at schools.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "ldrjzzfn3vk9",
+      "name": "Clever Portal Login Issues",
+      "status": "resolved",
+      "created_at": "2024-09-12T11:06:26.002-07:00",
+      "updated_at": "2024-09-12T11:27:15.037-07:00",
+      "monitoring_at": "2024-09-12T11:22:11.818-07:00",
+      "resolved_at": "2024-09-12T11:27:15.023-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/12wnvr8ts7f6",
+      "started_at": "2024-09-12T11:06:25.998-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "463wcm19bd39",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "ldrjzzfn3vk9",
+          "created_at": "2024-09-12T11:27:15.023-07:00",
+          "updated_at": "2024-09-12T11:27:15.023-07:00",
+          "display_at": "2024-09-12T11:27:15.023-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2wypvvz1grzy",
+          "status": "monitoring",
+          "body": "We have addressed the issue and are currently seeing improvements. We will continue to monitor for further errors and notify once the incident is completely resolved.",
+          "incident_id": "ldrjzzfn3vk9",
+          "created_at": "2024-09-12T11:22:11.818-07:00",
+          "updated_at": "2024-09-12T11:22:11.818-07:00",
+          "display_at": "2024-09-12T11:22:11.818-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "c405gvyqb2hb",
+          "status": "investigating",
+          "body": "Clever is currently experiencing an issue with users accessing Clever via the Clever Portal. This is preventing users from being able to login and access Clever. We are currently investigating the issue and will provide regular status updates.",
+          "incident_id": "ldrjzzfn3vk9",
+          "created_at": "2024-09-12T11:06:26.058-07:00",
+          "updated_at": "2024-09-12T11:06:26.058-07:00",
+          "display_at": "2024-09-12T11:06:26.058-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "g6z2xdcb5sq5",
+      "name": "District Admin \"Access Portal as\" Error",
+      "status": "resolved",
+      "created_at": "2024-09-09T13:28:50.876-07:00",
+      "updated_at": "2024-09-09T16:12:51.729-07:00",
+      "monitoring_at": "2024-09-09T13:28:50.979-07:00",
+      "resolved_at": "2024-09-09T16:12:51.710-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/9lt5vzz0v13g",
+      "started_at": "2024-09-09T13:28:50.869-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "t478wv9hj042",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "g6z2xdcb5sq5",
+          "created_at": "2024-09-09T16:12:51.710-07:00",
+          "updated_at": "2024-09-09T16:12:51.710-07:00",
+          "display_at": "2024-09-09T16:12:51.710-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "klj4tgkzvgn9",
+          "status": "monitoring",
+          "body": "Clever is experiencing an issue with District Admins needing to access portal as a user within Clever resulting in an \"Uh-Oh: Invalid request - 'redirect_uri' is not valid\" error.\n\nWe have addressed the issue and the product should be operating as normal. We will continue to monitor for further errors and notify once the incident is completely resolved. If you see any additional issues related to this, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "g6z2xdcb5sq5",
+          "created_at": "2024-09-09T13:28:50.979-07:00",
+          "updated_at": "2024-09-09T13:28:50.979-07:00",
+          "display_at": "2024-09-09T13:28:50.979-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5h29zbc9724w",
+          "name": "District Administration Dashboard",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.523-07:00",
+          "updated_at": "2025-08-25T13:51:31.322-07:00",
+          "position": 3,
+          "description": "Administrator dashboard for school districts located at schools.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "27cg2pr3cbgr",
+      "name": "Clever Portal Login Issues",
+      "status": "resolved",
+      "created_at": "2024-09-06T11:02:47.068-07:00",
+      "updated_at": "2024-09-06T11:02:47.124-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-09-06T11:02:47.114-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/qp0sl6gf3bqp",
+      "started_at": "2024-09-06T11:02:47.065-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "h84y1k36h8lb",
+          "status": "resolved",
+          "body": "Users may have experienced login issues to the Clever Portal today between 9:19am - 9:41am PT.  This issue was resolved and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "27cg2pr3cbgr",
+          "created_at": "2024-09-06T11:02:47.114-07:00",
+          "updated_at": "2024-09-06T11:02:47.114-07:00",
+          "display_at": "2024-09-06T11:02:47.114-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "sy2wnmf3cr82",
+      "name": "Clever Portal Login Issues",
+      "status": "resolved",
+      "created_at": "2024-09-06T09:45:58.207-07:00",
+      "updated_at": "2024-09-06T09:56:17.674-07:00",
+      "monitoring_at": "2024-09-06T09:49:53.663-07:00",
+      "resolved_at": "2024-09-06T09:56:17.658-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/j2zd5q94xq3h",
+      "started_at": "2024-09-06T09:45:58.201-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "h720mhlhjqpd",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "sy2wnmf3cr82",
+          "created_at": "2024-09-06T09:56:17.658-07:00",
+          "updated_at": "2024-09-06T09:56:17.658-07:00",
+          "display_at": "2024-09-06T09:56:17.658-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "sfqmhhpym3hb",
+          "status": "monitoring",
+          "body": "We’ve addressed the issue and are beginning to see login errors subside. Users should be able to log into Clever via the Clever Portal at this time. We’ll continue to monitor for further errors and notify once the incident is completely resolved.",
+          "incident_id": "sy2wnmf3cr82",
+          "created_at": "2024-09-06T09:49:53.663-07:00",
+          "updated_at": "2024-09-06T09:49:53.663-07:00",
+          "display_at": "2024-09-06T09:49:53.663-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "lbh5gv31xt9t",
+          "status": "investigating",
+          "body": "Clever is currently experiencing an issue with users accessing Clever via the Clever Portal. This is preventing users from being able to login and access Clever. We are currently investigating the issue and will provide regular status updates.",
+          "incident_id": "sy2wnmf3cr82",
+          "created_at": "2024-09-06T09:45:58.304-07:00",
+          "updated_at": "2024-09-06T09:45:58.304-07:00",
+          "display_at": "2024-09-06T09:45:58.304-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "v8t2v0d23br2",
+      "name": "Clever Portal Login Issues",
+      "status": "resolved",
+      "created_at": "2024-08-22T14:36:55.956-07:00",
+      "updated_at": "2024-08-22T14:36:56.010-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-08-22T14:36:56.002-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/z125256jtlgs",
+      "started_at": "2024-08-22T14:36:55.953-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "7kj6460mw1gf",
+          "status": "resolved",
+          "body": "Users may have experienced login issues to the Clever Portal today between 11:40 am - 12:00 pm PT.  This issue was resolved and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "v8t2v0d23br2",
+          "created_at": "2024-08-22T14:36:56.002-07:00",
+          "updated_at": "2024-08-22T14:36:56.002-07:00",
+          "display_at": "2024-08-22T14:36:56.002-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "f15m1zb24xb8",
+      "name": "PowerSchool Plugin districts still seeing 2023-2024 school year data",
+      "status": "resolved",
+      "created_at": "2024-08-01T08:13:08.697-07:00",
+      "updated_at": "2024-08-02T09:07:15.503-07:00",
+      "monitoring_at": "2024-08-01T13:34:09.736-07:00",
+      "resolved_at": "2024-08-02T09:07:12.575-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/vpk9c9d7n7n9",
+      "started_at": "2024-08-01T08:13:08.691-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "gr8jmr92j0tl",
+          "status": "resolved",
+          "body": "Our Engineers have identified the cause of the issue and a fix. For any PowerSchool Plugin districts that are still seeing 2023-2024 school year data, the next step is to download the newest version of the Plugin. You can find instructions on how to do that from this Help Center article: https://support.clever.com/s/articles/000001590?language=en_US#update \n\nThank you for your patience and we apologize for any inconvenience this may have caused.",
+          "incident_id": "f15m1zb24xb8",
+          "created_at": "2024-08-02T09:07:12.575-07:00",
+          "updated_at": "2024-08-02T09:07:12.575-07:00",
+          "display_at": "2024-08-02T09:07:12.575-07:00",
+          "affected_components": [
+            {
+              "code": "ch1x0r8cjl60",
+              "name": "SIS Sync - Powerschool",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "2gc1g27fctyk",
+          "status": "monitoring",
+          "body": "Our Engineers have identified the cause of the issue and a fix. For any PowerSchool Plugin districts that are still seeing 2023-2024 school year data, the next step is to download the newest version of the Plugin. You can find instructions on how to do that from this Help Center article: https://support.clever.com/s/articles/000001590?language=en_US#update \n\nIf you have any questions or need assistance, please reach out to support.clever.com and a member of our Support Team will reach out to you!",
+          "incident_id": "f15m1zb24xb8",
+          "created_at": "2024-08-01T13:34:09.736-07:00",
+          "updated_at": "2024-08-01T13:34:09.736-07:00",
+          "display_at": "2024-08-01T13:34:09.736-07:00",
+          "affected_components": [
+            {
+              "code": "ch1x0r8cjl60",
+              "name": "SIS Sync - Powerschool",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "4ynjd1kpsj2k",
+          "status": "investigating",
+          "body": "Some PowerSchool Plugin districts are still seeing 2023-2024 school year data in addition to 2024-2025 data despite the rollover date being 8/1/2024. Our team is currently investigating this issue and will provide updates as soon as they are available. Thank you for your patience.",
+          "incident_id": "f15m1zb24xb8",
+          "created_at": "2024-08-01T08:13:08.760-07:00",
+          "updated_at": "2024-08-01T08:13:08.760-07:00",
+          "display_at": "2024-08-01T08:13:08.760-07:00",
+          "affected_components": [
+            {
+              "code": "ch1x0r8cjl60",
+              "name": "SIS Sync - Powerschool",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "ch1x0r8cjl60",
+          "name": "Powerschool",
+          "status": "operational",
+          "created_at": "2018-05-29T18:06:48.589-07:00",
+          "updated_at": "2025-04-10T09:40:29.984-07:00",
+          "position": 5,
+          "description": "Clever's automated Powerschool Sync",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "pwmmdfgbh6cq",
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "xgsgw604fvzp",
+      "name": "Student Data not syncing for Infinite Campus API version 1.2",
+      "status": "resolved",
+      "created_at": "2024-07-29T06:00:47.309-07:00",
+      "updated_at": "2024-07-29T06:09:05.963-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-07-29T06:09:05.952-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/rnm73kx4z3hb",
+      "started_at": "2024-07-29T06:00:47.303-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "zqqjm4pzz4g4",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "xgsgw604fvzp",
+          "created_at": "2024-07-29T06:09:05.952-07:00",
+          "updated_at": "2024-07-29T06:09:05.952-07:00",
+          "display_at": "2024-07-29T06:09:05.952-07:00",
+          "affected_components": [
+            {
+              "code": "qp4n99byz2kc",
+              "name": "SIS Sync - Infinite Campus",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "q7scmh6wf0tg",
+          "status": "investigating",
+          "body": "Clever is experiencing an issue where student data is not syncing for some districts using the Infinite Campus API version 1.2. This is preventing student data from syncing to Clever. We’re investigating the issue and will provide regular status updates.",
+          "incident_id": "xgsgw604fvzp",
+          "created_at": "2024-07-29T06:00:47.365-07:00",
+          "updated_at": "2024-07-29T06:00:47.365-07:00",
+          "display_at": "2024-07-29T06:00:47.365-07:00",
+          "affected_components": [
+            {
+              "code": "qp4n99byz2kc",
+              "name": "SIS Sync - Infinite Campus",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "qp4n99byz2kc",
+          "name": "Infinite Campus",
+          "status": "operational",
+          "created_at": "2018-05-29T18:07:43.089-07:00",
+          "updated_at": "2025-07-24T11:08:37.605-07:00",
+          "position": 3,
+          "description": "Clever's automated Infinite Campus Sync",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "pwmmdfgbh6cq",
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "gmjlgc77pqbl",
+      "name": "Clever website providing 429 Error",
+      "status": "resolved",
+      "created_at": "2024-06-25T13:15:13.254-07:00",
+      "updated_at": "2024-06-25T16:58:00.651-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-06-25T16:58:00.637-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/mwj9z2xs8q80",
+      "started_at": "2024-06-25T13:15:13.249-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "kbqvh82gh9ws",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "gmjlgc77pqbl",
+          "created_at": "2024-06-25T16:58:00.637-07:00",
+          "updated_at": "2024-06-25T16:58:00.637-07:00",
+          "display_at": "2024-06-25T16:58:00.637-07:00",
+          "affected_components": [
+            {
+              "code": "rt55rmqjmqj0",
+              "name": "Clever Website",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "j755d3jd3d5w",
+          "status": "investigating",
+          "body": "Clever is experiencing an issue with the clever.com web page resulting in a 429 error when trying to access. We’re investigating the issue and will provide regular status updates.\n\nPlease note that the Clever Help Center and login page are still operational. You can access the Help Center at https://support.clever.com/s/?language=en_US and the Clever login page at https://www.clever.com/login.",
+          "incident_id": "gmjlgc77pqbl",
+          "created_at": "2024-06-25T13:15:13.319-07:00",
+          "updated_at": "2024-06-25T13:15:13.319-07:00",
+          "display_at": "2024-06-25T13:15:13.319-07:00",
+          "affected_components": [
+            {
+              "code": "rt55rmqjmqj0",
+              "name": "Clever Website",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "rt55rmqjmqj0",
+          "name": "Clever Website",
+          "status": "operational",
+          "created_at": "2024-01-08T14:03:23.003-08:00",
+          "updated_at": "2025-07-03T14:07:56.138-07:00",
+          "position": 9,
+          "description": "clever.com site",
+          "showcase": false,
+          "start_date": "2024-01-08",
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "tmkpvf415b1z",
+      "name": "Errors when accessing Apps through Clever Portal on Chromebooks",
+      "status": "resolved",
+      "created_at": "2024-05-29T12:38:24.448-07:00",
+      "updated_at": "2024-05-31T13:42:15.620-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-05-31T13:42:15.602-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/bbtfpp5x46dd",
+      "started_at": "2024-05-29T12:38:24.440-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "znptfhbn29g7",
+          "status": "resolved",
+          "body": "Google has resolved this issue and is rolling the fix out in stages for impacted customers throughout the day today. For districts using the LTS channel, Super Admins in Google can optionally update to 120.0.6099.313 now to resolve.",
+          "incident_id": "tmkpvf415b1z",
+          "created_at": "2024-05-31T13:42:15.602-07:00",
+          "updated_at": "2024-05-31T13:42:15.602-07:00",
+          "display_at": "2024-05-31T13:42:15.602-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "xsgrp0vd46gr",
+          "status": "identified",
+          "body": "We have identified the error causing users to encounter a SIGSEGV error when access applications through the Clever Portal in Chromebooks. The root cause of the issue is limited to the Google v120 release. Google is aware of the issue and actively working to resolve issue in the coming days. We recommend not upgrading to the newest v120 release at this time until Google has resolved the issue.\n\nAs a workaround, you can either roll back to the .310 or .311 of v120 or move to the v124 in the meantime. We will provide status updates as they become available from Google.",
+          "incident_id": "tmkpvf415b1z",
+          "created_at": "2024-05-29T12:38:24.532-07:00",
+          "updated_at": "2024-05-29T12:38:24.532-07:00",
+          "display_at": "2024-05-29T12:38:24.532-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "ym92b5vjsmhw",
+      "name": "Loading Errors within District Dashboard",
+      "status": "resolved",
+      "created_at": "2024-05-24T05:50:21.377-07:00",
+      "updated_at": "2024-05-24T06:16:11.957-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-05-24T06:16:11.946-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/svqhrc4w2t2s",
+      "started_at": "2024-05-24T05:50:21.373-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "2w1d76qzm1gq",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "ym92b5vjsmhw",
+          "created_at": "2024-05-24T06:16:11.946-07:00",
+          "updated_at": "2024-05-24T06:16:11.946-07:00",
+          "display_at": "2024-05-24T06:16:11.946-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "bxhrly1nj5q9",
+          "status": "investigating",
+          "body": "Clever is experiencing errors when navigating within the District Dashboard preventing certain areas of the product from loading. We are investigating the issue and will provide regular status updates.",
+          "incident_id": "ym92b5vjsmhw",
+          "created_at": "2024-05-24T05:50:21.440-07:00",
+          "updated_at": "2024-05-24T05:50:21.440-07:00",
+          "display_at": "2024-05-24T05:50:21.440-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5h29zbc9724w",
+          "name": "District Administration Dashboard",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.523-07:00",
+          "updated_at": "2025-08-25T13:51:31.322-07:00",
+          "position": 3,
+          "description": "Administrator dashboard for school districts located at schools.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "98vpz9rwbf24",
+      "name": "Pending Staff Deletions",
+      "status": "resolved",
+      "created_at": "2024-05-09T05:46:25.232-07:00",
+      "updated_at": "2024-05-09T07:29:59.495-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-05-09T07:29:59.471-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/x353hmfxnydp",
+      "started_at": "2024-05-09T05:46:25.221-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "8h9372rw2psc",
+          "status": "resolved",
+          "body": "This incident has been resolved.",
+          "incident_id": "98vpz9rwbf24",
+          "created_at": "2024-05-09T07:29:59.471-07:00",
+          "updated_at": "2024-05-09T07:29:59.471-07:00",
+          "display_at": "2024-05-09T07:29:59.471-07:00",
+          "affected_components": [
+            {
+              "code": "1l34sxbv8l63",
+              "name": "SIS Sync - SFTP / Other",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "qp4n99byz2kc",
+              "name": "SIS Sync - Infinite Campus",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            },
+            {
+              "code": "88xtg14gkzsg",
+              "name": "SIS Sync - Skyward",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "575vhbrynh69",
+          "status": "investigating",
+          "body": "Clever is actively investigating reports of pending deleted staff members across various student information system auto syncs. We’re investigating the issue and will provide regular status updates.",
+          "incident_id": "98vpz9rwbf24",
+          "created_at": "2024-05-09T05:46:25.336-07:00",
+          "updated_at": "2024-05-09T05:46:25.336-07:00",
+          "display_at": "2024-05-09T05:46:25.336-07:00",
+          "affected_components": [
+            {
+              "code": "1l34sxbv8l63",
+              "name": "SIS Sync - SFTP / Other",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "qp4n99byz2kc",
+              "name": "SIS Sync - Infinite Campus",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            },
+            {
+              "code": "88xtg14gkzsg",
+              "name": "SIS Sync - Skyward",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "1l34sxbv8l63",
+          "name": "SFTP / Other",
+          "status": "operational",
+          "created_at": "2018-05-29T17:59:08.920-07:00",
+          "updated_at": "2024-05-09T07:29:59.425-07:00",
+          "position": 1,
+          "description": "District Sync uses SFTP or an SIS not listed",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "pwmmdfgbh6cq",
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "qp4n99byz2kc",
+          "name": "Infinite Campus",
+          "status": "operational",
+          "created_at": "2018-05-29T18:07:43.089-07:00",
+          "updated_at": "2025-07-24T11:08:37.605-07:00",
+          "position": 3,
+          "description": "Clever's automated Infinite Campus Sync",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "pwmmdfgbh6cq",
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        },
+        {
+          "id": "88xtg14gkzsg",
+          "name": "Skyward",
+          "status": "operational",
+          "created_at": "2018-05-29T18:06:26.430-07:00",
+          "updated_at": "2025-09-10T14:09:18.928-07:00",
+          "position": 6,
+          "description": "Clever's automated Skyward Sync",
+          "showcase": false,
+          "start_date": null,
+          "group_id": "pwmmdfgbh6cq",
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "bftzt5y6n5lt",
+      "name": "District and School Announcements in the Portal and Teacher App page sharing is currently down",
+      "status": "resolved",
+      "created_at": "2024-05-03T07:50:56.125-07:00",
+      "updated_at": "2024-05-03T08:32:51.384-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-05-03T08:32:51.367-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/dq0htn21hl6k",
+      "started_at": "2024-05-03T07:50:56.118-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "5n0395hkwql0",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you experience any additional issues, please contact Clever Support through support.clever.com.",
+          "incident_id": "bftzt5y6n5lt",
+          "created_at": "2024-05-03T08:32:51.367-07:00",
+          "updated_at": "2024-05-03T08:32:51.367-07:00",
+          "display_at": "2024-05-03T08:32:51.367-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "yfg2djvm4dd3",
+          "status": "investigating",
+          "body": "We are continuing to investigate this issue.",
+          "incident_id": "bftzt5y6n5lt",
+          "created_at": "2024-05-03T07:51:05.054-07:00",
+          "updated_at": "2024-05-03T07:51:05.054-07:00",
+          "display_at": "2024-05-03T07:51:05.054-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "partial_outage",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7xv5tbxn4mk7",
+          "status": "investigating",
+          "body": "We are aware that District and School Announcements in the Portal and Teacher App page sharing is currently down for some districts. Our teams are currently investigating the issue and we will provide regular status updates. We apologize for any inconvenience this may cause.",
+          "incident_id": "bftzt5y6n5lt",
+          "created_at": "2024-05-03T07:50:56.210-07:00",
+          "updated_at": "2024-05-03T07:50:56.210-07:00",
+          "display_at": "2024-05-03T07:50:56.210-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5h29zbc9724w",
+          "name": "District Administration Dashboard",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.523-07:00",
+          "updated_at": "2025-08-25T13:51:31.322-07:00",
+          "position": 3,
+          "description": "Administrator dashboard for school districts located at schools.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "mzlpcpk3f3jv",
+      "name": "Phone Support Temporarily Unavailable",
+      "status": "resolved",
+      "created_at": "2024-04-22T08:23:55.837-07:00",
+      "updated_at": "2024-04-22T10:41:28.518-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-04-22T10:41:28.502-07:00",
+      "impact": "none",
+      "shortlink": "https://stspg.io/r13kljdfgj86",
+      "started_at": "2024-04-22T08:23:55.832-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "c6sgpp78yftw",
+          "status": "resolved",
+          "body": "Our phone provider has resolved the incident and our phone service for support should be working now. Thank you for your patience!",
+          "incident_id": "mzlpcpk3f3jv",
+          "created_at": "2024-04-22T10:41:28.502-07:00",
+          "updated_at": "2024-04-22T10:41:28.502-07:00",
+          "display_at": "2024-04-22T10:41:28.502-07:00",
+          "affected_components": [
+            {
+              "code": "4pm78b6tqdj8",
+              "name": "Support",
+              "old_status": "major_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "7sjqqlwphxxh",
+          "status": "investigating",
+          "body": "Clever Support's phone provider is experiencing service issues. We are monitoring the service outage and will provide regular status updates. In the meantime, please submit all support requests via our web form at support.clever.com to ensure our team receives your request!",
+          "incident_id": "mzlpcpk3f3jv",
+          "created_at": "2024-04-22T08:23:55.915-07:00",
+          "updated_at": "2024-04-22T08:23:55.915-07:00",
+          "display_at": "2024-04-22T08:23:55.915-07:00",
+          "affected_components": [
+            {
+              "code": "4pm78b6tqdj8",
+              "name": "Support",
+              "old_status": "operational",
+              "new_status": "major_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "4pm78b6tqdj8",
+          "name": "Support",
+          "status": "operational",
+          "created_at": "2015-01-30T11:15:55.138-08:00",
+          "updated_at": "2025-07-09T15:38:35.132-07:00",
+          "position": 8,
+          "description": "support.clever.com, ticket system, phone support",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": "[]"
+    },
+    {
+      "id": "n9xfc4qpcrms",
+      "name": "Unable to search and add Apps in the District Dashboard",
+      "status": "resolved",
+      "created_at": "2024-04-11T10:52:20.564-07:00",
+      "updated_at": "2024-04-11T12:02:12.050-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-04-11T12:02:12.037-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/tm2vtl251yd9",
+      "started_at": "2024-04-11T10:52:20.559-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "ly1lzm87d1bq",
+          "status": "resolved",
+          "body": "We have resolved this issue, and everything is back to normal. If you see any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "n9xfc4qpcrms",
+          "created_at": "2024-04-11T12:02:12.037-07:00",
+          "updated_at": "2024-04-11T12:02:12.037-07:00",
+          "display_at": "2024-04-11T12:02:12.037-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "80ftdm10lbdk",
+          "status": "investigating",
+          "body": "Clever is experiencing an issue in the District Dashboard which is preventing the ability to search for applications. This is preventing the ability to add applications within the District Dashboard. We are investigating the issue and will provide regular status updates.",
+          "incident_id": "n9xfc4qpcrms",
+          "created_at": "2024-04-11T10:52:20.649-07:00",
+          "updated_at": "2024-04-11T10:52:20.649-07:00",
+          "display_at": "2024-04-11T10:52:20.649-07:00",
+          "affected_components": [
+            {
+              "code": "5h29zbc9724w",
+              "name": "District Administration Dashboard",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "5h29zbc9724w",
+          "name": "District Administration Dashboard",
+          "status": "operational",
+          "created_at": "2013-07-22T15:36:22.523-07:00",
+          "updated_at": "2025-08-25T13:51:31.322-07:00",
+          "position": 3,
+          "description": "Administrator dashboard for school districts located at schools.clever.com",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "cgnk4ly4sd9r",
+      "name": "Twilio experiencing an issue with Outbound SMS",
+      "status": "resolved",
+      "created_at": "2024-03-26T06:04:35.054-07:00",
+      "updated_at": "2024-03-26T07:56:02.603-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-03-26T07:56:02.575-07:00",
+      "impact": "major",
+      "shortlink": "https://stspg.io/tns7wbpq489l",
+      "started_at": "2024-03-26T06:04:35.049-07:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "5b1xt5wt7rz8",
+          "status": "resolved",
+          "body": "Twilio has resolved this issue for Clever, and everything is back to normal.",
+          "incident_id": "cgnk4ly4sd9r",
+          "created_at": "2024-03-26T07:56:02.575-07:00",
+          "updated_at": "2024-03-26T07:56:02.575-07:00",
+          "display_at": "2024-03-26T07:56:02.575-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "partial_outage",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "cvynb1ny3jrq",
+          "status": "investigating",
+          "body": "Twilio, a service that works with Clever, is experiencing an issue with outbound SMS for users. This is preventing users from being able to receive text messages when needing to authenticate using Multi-Factor Authentication (MFA) into Clever. We are monitoring the issue and will provide status updates as they become available from Twilio. For more information on the issue, visit https://status.twilio.com/.",
+          "incident_id": "cgnk4ly4sd9r",
+          "created_at": "2024-03-26T06:04:35.122-07:00",
+          "updated_at": "2024-03-26T06:04:35.122-07:00",
+          "display_at": "2024-03-26T06:04:35.122-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "partial_outage"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    },
+    {
+      "id": "68yd4g1nd10n",
+      "name": "Clever iOS app login issues",
+      "status": "resolved",
+      "created_at": "2024-03-06T17:00:38.639-08:00",
+      "updated_at": "2024-03-21T14:44:15.361-07:00",
+      "monitoring_at": null,
+      "resolved_at": "2024-03-21T14:44:15.350-07:00",
+      "impact": "minor",
+      "shortlink": "https://stspg.io/z43s8ghm8lb1",
+      "started_at": "2024-03-06T17:00:38.634-08:00",
+      "page_id": "mrrn21wjyltc",
+      "incident_updates": [
+        {
+          "id": "cg5phs6j0x6l",
+          "status": "resolved",
+          "body": "Apple has released iOS 17.4.1 and Badge scanning in the Clever iOS app is back to normal. To resolve this issue for your district, please upgrade to iOS 17.4.1.\n\nIf you experience any additional issues, please contact Clever Support through our Help Center: support.clever.com.",
+          "incident_id": "68yd4g1nd10n",
+          "created_at": "2024-03-21T14:44:15.350-07:00",
+          "updated_at": "2024-03-21T14:44:15.350-07:00",
+          "display_at": "2024-03-21T14:44:15.350-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "degraded_performance",
+              "new_status": "operational"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "hxmzmnmtv6z6",
+          "status": "investigating",
+          "body": "Our teams have discovered that this issue is known to impact iPad 7th generation and lower when upgrading to iOS 17.4.\n\nIf you wish to avoid Clever app users in your district from being impacted, you can delay updating iPad devices to iOS 17.4 at this time. Please review Apple’s notice to make an informed decision on upgrading here: https://support.apple.com/en-us/HT214081?lid=lipyd4ap95wy\n\nIf you have upgraded to iOS 17.4 and are experiencing login issues with the Clever app, we recommend uninstalling the Clever app and using a browser, such as Safari, to log into Clever.\n\nWe will continue to provide status updates when they become available.",
+          "incident_id": "68yd4g1nd10n",
+          "created_at": "2024-03-11T15:01:31.915-07:00",
+          "updated_at": "2024-03-11T15:01:31.915-07:00",
+          "display_at": "2024-03-11T15:01:31.915-07:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "mrsh4vpc0n1s",
+          "status": "investigating",
+          "body": "Our teams have discovered that this issue is known to affect certain hardware such as 6th and 7th generation iPads though are not limited to these generations of iPads when upgrading to iOS 17.4.\n\nIf you wish to avoid Clever app users in your district from being impacted, you can delay updating iPad devices to iOS 17.4 at this time. Please review Apple’s notice to make an informed decision on upgrading here: https://support.apple.com/en-us/HT214081?lid=lipyd4ap95wy\n\nIf you have upgraded to iOS 17.4 and are experiencing login issues with the Clever app, we recommend uninstalling the Clever app and using a browser, such as Safari, to log into Clever.\n\nWe will continue to provide status updates when they become available.",
+          "incident_id": "68yd4g1nd10n",
+          "created_at": "2024-03-08T12:13:13.892-08:00",
+          "updated_at": "2024-03-08T12:13:13.892-08:00",
+          "display_at": "2024-03-08T12:13:13.892-08:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "nzmtlknvg21l",
+          "status": "investigating",
+          "body": "Our teams have reproduced the issue and are continuing to investigate the cause and a solution. We will provide updates when they become available.\n\nIn the meantime, we recommend that users do not upgrade to iOS 17.4. If you have upgraded to iOS 17.4 and are experiencing issues with the Clever app, we recommend uninstalling the Clever app and using a browser, such as Safari, to log in to Clever.",
+          "incident_id": "68yd4g1nd10n",
+          "created_at": "2024-03-07T16:36:43.403-08:00",
+          "updated_at": "2024-03-07T17:04:12.017-08:00",
+          "display_at": "2024-03-07T16:36:43.000-08:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "j2yxw8bn968d",
+          "status": "investigating",
+          "body": "Our teams have reproduced the issue and are actively investigating the cause and a solution. \n\nIn the meantime, as a precaution, we recommend that users do not upgrade to iOS 17.4. If you have upgraded to iOS 17.4 and are experiencing issues with the Clever app, we recommend either downgrading to iOS 17.3 or uninstalling the Clever app and using a browser, such as Safari, to log in to Clever.",
+          "incident_id": "68yd4g1nd10n",
+          "created_at": "2024-03-06T18:56:59.490-08:00",
+          "updated_at": "2024-03-06T18:56:59.490-08:00",
+          "display_at": "2024-03-06T18:56:59.490-08:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "degraded_performance",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        },
+        {
+          "id": "s0sxdxn7zccd",
+          "status": "investigating",
+          "body": "Clever is aware of an issue where some users are unable to scan Badges in the Clever iOS app after updating to iOS 17.4. We are investigating the issue and will provide regular status updates.\n\nIn the meantime, as a precaution, we recommend that users do not upgrade to iOS 17.4. If you have upgraded to iOS 17.4 and are experiencing issues with the Clever app, we recommend either downgrading to iOS 17.3 or uninstalling the Clever app and using a browser, such as Safari, to log in to Clever.",
+          "incident_id": "68yd4g1nd10n",
+          "created_at": "2024-03-06T17:00:38.717-08:00",
+          "updated_at": "2024-03-06T17:00:38.717-08:00",
+          "display_at": "2024-03-06T17:00:38.717-08:00",
+          "affected_components": [
+            {
+              "code": "xp3z1479s14w",
+              "name": "Single Sign-On",
+              "old_status": "operational",
+              "new_status": "degraded_performance"
+            }
+          ],
+          "deliver_notifications": true,
+          "custom_tweet": null,
+          "tweet_id": null
+        }
+      ],
+      "components": [
+        {
+          "id": "xp3z1479s14w",
+          "name": "Single Sign-On",
+          "status": "operational",
+          "created_at": "2014-06-18T08:28:04.346-07:00",
+          "updated_at": "2025-09-19T08:43:01.094-07:00",
+          "position": 1,
+          "description": "Clever Single Sign-On and User Portal",
+          "showcase": false,
+          "start_date": null,
+          "group_id": null,
+          "page_id": "mrrn21wjyltc",
+          "group": false,
+          "only_show_if_degraded": false
+        }
+      ],
+      "reminder_intervals": null
+    }
+  ]
+}
