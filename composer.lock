@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7453b49df99984014173fdefab92de7d",
+    "content-hash": "cead6e285edc661e61dc10f841554520",
     "packages": [],
     "packages-dev": [
         {
@@ -364,12 +364,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "b1f6f5d4393ecadae3dbef649c7faff18f9d8e4b"
+                "reference": "e4e21c7b1983512f14c568b63dc13d1000566794"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b1f6f5d4393ecadae3dbef649c7faff18f9d8e4b",
-                "reference": "b1f6f5d4393ecadae3dbef649c7faff18f9d8e4b",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e4e21c7b1983512f14c568b63dc13d1000566794",
+                "reference": "e4e21c7b1983512f14c568b63dc13d1000566794",
                 "shasum": ""
             },
             "require": {
@@ -415,7 +415,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-17T19:31:07+00:00"
+            "time": "2025-09-19T12:26:44+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -2099,16 +2099,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "dev-master",
+            "version": "3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "243243670f0303793a698dae582bf40b2203a5b2"
+                "reference": "38163292ae5ba2d491850d19941711a8067dcbdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/243243670f0303793a698dae582bf40b2203a5b2",
-                "reference": "243243670f0303793a698dae582bf40b2203a5b2",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/38163292ae5ba2d491850d19941711a8067dcbdb",
+                "reference": "38163292ae5ba2d491850d19941711a8067dcbdb",
                 "shasum": ""
             },
             "require": {
@@ -2125,11 +2125,6 @@
                 "bin/phpcs"
             ],
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -2179,7 +2174,7 @@
                     "type": "thanks_dev"
                 }
             ],
-            "time": "2025-09-14T05:03:09+00:00"
+            "time": "2025-09-19T18:14:21+00:00"
         },
         {
             "name": "staabm/side-effects-detector",
@@ -2367,7 +2362,8 @@
         "ext-json": "*",
         "ext-ldap": "*",
         "ext-mbstring": "*",
-        "ext-simplexml": "*"
+        "ext-simplexml": "*",
+        "ext-curl": "*"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
