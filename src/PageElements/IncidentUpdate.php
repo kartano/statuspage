@@ -20,15 +20,15 @@ final class IncidentUpdate
     }
     public ?\DateTime $created_at = null {
         get => $this->created_at;
-        set { $this->created_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->created_at = $value; }
     }
     public ?\DateTime $updated_at = null {
         get => $this->updated_at;
-        set { $this->updated_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->updated_at = $value; }
     }
     public ?\DateTime $display_at = null {
         get => $this->display_at;
-        set { $this->display_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->display_at = $value; }
     }
     public ?bool $deliver_notifications = null {
         get => $this->deliver_notifications;
@@ -44,7 +44,7 @@ final class IncidentUpdate
     }
 
     public array $affected_components = [] {
-        &get => $this->affected_components;
+        & get => $this->affected_components;
     }
 
     public ?Incident $parent_incident = null {
@@ -66,7 +66,7 @@ final class IncidentUpdate
         $this->tweet_id = $incidentUpdate['tweet_id'];
 
         foreach ($incidentUpdate['affected_components'] as $component) {
-            $affectedComponent = new AffectedComponent($component);
+            $affectedComponent = new AffectedComponent($component, $this);
             $this->affected_components[$affectedComponent->code] = $affectedComponent;
         }
     }

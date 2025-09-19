@@ -23,12 +23,12 @@ final class IncidentComponent
 
     public ?\DateTime $created_at = null {
         get => $this->created_at;
-        set { $this->created_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->created_at = $value; }
     }
 
     public ?\DateTime $updated_at = null {
         get => $this->updated_at;
-        set { $this->updated_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->updated_at = $value; }
     }
 
     public ?int $position = null {
@@ -48,7 +48,7 @@ final class IncidentComponent
 
     public ?\DateTime $start_date = null {
         get => $this->start_date;
-        set { $this->start_date = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->start_date = $value; }
     }
 
     public ?string $group_id = null {

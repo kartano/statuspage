@@ -10,21 +10,25 @@ final class Page
         get => $this->id;
         set { $this->id = $value; }
     }
+
     public ?string $name = null {
         get => $this->name;
         set { $this->name = $value; }
     }
+
     public ?string $url = null {
         get => $this->url;
         set { $this->url = $value; }
     }
+
     public ?\DateTimeZone $time_zone = null {
         get => $this->time_zone;
         set { $this->time_zone = $value; }
     }
-    public ?\DateTime $updated_at = null {
+
+    public ?\DateTime $updated_at {
         get => $this->updated_at;
-        set { $this->updated_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->updated_at = $value; }
     }
 
     public function __construct(array $page)

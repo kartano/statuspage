@@ -22,19 +22,19 @@ final class Incident
     }
     public ?\DateTime $created_at = null {
         get => $this->created_at;
-        set { $this->created_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->created_at = $value; }
     }
     public ?\DateTime $updated_at = null {
         get => $this->updated_at;
-        set { $this->updated_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->updated_at = $value; }
     }
     public ?\DateTime $monitoring_at = null {
         get => $this->monitoring_at;
-        set { $this->monitoring_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->monitoring_at = $value; }
     }
     public ?\DateTime $resolved_at = null {
         get => $this->resolved_at;
-        set { $this->resolved_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->resolved_at = $value; }
     }
     public string $impact = 'none' {
         get => $this->impact;
@@ -46,15 +46,15 @@ final class Incident
     }
     public ?\DateTime $started_at = null {
         get => $this->started_at;
-        set { $this->started_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
+        set { $this->started_at = $value; }
     }
 
     public array $incident_updates = [] {
-        &get => $this->incident_updates;
+        & get => $this->incident_updates;
     }
 
     public array $components = [] {
-        &get => $this->components;
+        & get => $this->components;
     }
 
     public ?string $reminder_intervals = null {
