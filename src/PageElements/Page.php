@@ -24,7 +24,7 @@ final class Page
     }
     public ?\DateTime $updated_at = null {
         get => $this->updated_at;
-        set { $this->updated_at = $value; }
+        set { $this->updated_at = $value instanceof \DateTime ? $value : new \DateTime($value); }
     }
 
     public function __construct(array $page)
@@ -33,6 +33,6 @@ final class Page
         $this->name = $page['name'];
         $this->url = $page['url'];
         $this->time_zone = new \DateTimeZone($page['time_zone']);
-        $this->updated_at = new \DateTime($page['updated_at']);
+        $this->updated_at = $page['updated_at'] ?? null;
     }
 }

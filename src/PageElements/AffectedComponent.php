@@ -23,8 +23,14 @@ final class AffectedComponent
         set { $this->new_status = $value; }
     }
 
-    public function __construct(array $affectedComponent)
+    public ?IncidentUpdate $parent_incident_update = null {
+        get => $this->parent_incident_update;
+        set { $this->parent_incident_update = $value; }
+    }
+
+    public function __construct(array $affectedComponent, IncidentUpdate $parent)
     {
+        $this->parent_incident_update = $parent;
         $this->code = $affectedComponent['code'];
         $this->name = $affectedComponent['name'];
         $this->old_status = $affectedComponent['old_status'];
