@@ -2,6 +2,7 @@
 
 namespace KartanoTest;
 
+use Kartano\Statuspage\PageElements\Incident;
 use Kartano\Statuspage\Statuspage;
 use PHPUnit\Framework\TestCase;
 
@@ -13,7 +14,14 @@ class StatuspageTest extends TestCase
         $page = Statuspage::getFromJSONString($rawJson);
         $this->assertEquals('Clever', $page->page->name);
         $this->assertEquals('https://status.clever.com', $page->page->url);
+        $this->assertEquals(50, count($page->incidents));
 
-        print_r($page);
+        // SM:  Invalid ID should throw exception
+        try {
+            $page->page->id = 'NOT_VALID';
+            $this->fail('Invalid ID test should fail');
+        } catch (\InvalidArgumentException $e) {
+            $this->assertEquals('ID NOT_VALID is not valid.', $e->getMessage());
+        }
     }
 }

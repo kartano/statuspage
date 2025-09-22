@@ -16,4 +16,13 @@ final class Util
             return new \DateTime($value);
         }
     }
+
+    public static function assertValidID(string $id): string
+    {
+        if (preg_match('/^[a-z0-9]{12}$/', $id)) {
+            return $id;
+        } else {
+            throw new \InvalidArgumentException('ID ' . $id . ' is not valid.');
+        }
+    }
 }
