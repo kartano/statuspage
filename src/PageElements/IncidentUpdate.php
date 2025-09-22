@@ -10,7 +10,7 @@ final class IncidentUpdate
 {
     public ?string $id = null {
         get => $this->id;
-        set { $this->id = $value; }
+        set { $this->id = Util::assertValidID($value); }
     }
     public ?string $status = null {
         get => $this->status;
@@ -67,9 +67,12 @@ final class IncidentUpdate
         $this->custom_tweet = $incidentUpdate['custom_tweet'];
         $this->tweet_id = $incidentUpdate['tweet_id'];
 
-        foreach ($incidentUpdate['affected_components'] as $component) {
-            $affectedComponent = new AffectedComponent($component, $this);
-            $this->affected_components[$affectedComponent->code] = $affectedComponent;
+        // SM:  Incident update may not involve any particular component
+        if (!is_null($incidentUpdate['affected_components'])) {
+            foreach ($incidentUpdate['affected_components'] as $component) {
+                $affectedComponent = new AffectedComponent($component, $this);
+                $this->affected_components[$affectedComponent->code] = $affectedComponent;
+            }
         }
     }
 }

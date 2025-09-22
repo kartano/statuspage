@@ -11,7 +11,7 @@ final class Incident
 {
     public ?string $id = null {
         get => $this->id;
-        set { $this->id = $value; }
+        set { $this->id = Util::assertValidID($value); }
     }
 
     public ?string $name = null {
@@ -91,16 +91,19 @@ final class Incident
         $this->shortlink = $incident['shortlink'];
         $this->started_at = Util::safeDateTime($incident['started_at']);
 
-        foreach ($incident['incident_updates'] as $update) {
-            $incidentUpdate = new IncidentUpdate($update, $this);
-            $this->incident_updates[$incidentUpdate->id] = $incidentUpdate;
+        if (!is_null($incident['incident_updates'])) {
+            foreach ($incident['incident_updates'] as $update) {
+                $incidentUpdate = new IncidentUpdate($update, $this);
+                $this->incident_updates[$incidentUpdate->id] = $incidentUpdate;
+            }
         }
 
-        foreach ($incident['components'] as $component) {
-            $incidentComponent = new IncidentComponent($component, $this);
-            $this->components[$incidentComponent->id] = $incidentComponent;
+        if (!is_null($incident['components'])) {
+            foreach ($incident['components'] as $component) {
+                $incidentComponent = new IncidentComponent($component, $this);
+                $this->components[$incidentComponent->id] = $incidentComponent;
+            }
         }
-
         $this->reminder_intervals = $incident['reminder_intervals'] ?? null;
     }
 }

@@ -10,7 +10,7 @@ final class IncidentComponent
 {
     public ?string $id = null {
         get => $this->id;
-        set { $this->id = $value; }
+        set { $this->id = Util::assertValidID($value); }
     }
 
     public ?string $name = null {
