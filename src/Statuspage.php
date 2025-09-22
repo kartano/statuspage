@@ -15,7 +15,7 @@ final class Statuspage
 
     /** @var Incident[] $incidents */
     public array $incidents = [] {
-        &get => $this->incidents;
+        & get => $this->incidents;
     }
 
     /**
