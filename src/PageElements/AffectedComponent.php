@@ -35,4 +35,14 @@ final class AffectedComponent
         $this->old_status = $affectedComponent['old_status'];
         $this->new_status = $affectedComponent['new_status'];
     }
+
+    public function toArray(): array
+    {
+        $result = [];
+        $result['code'] = $this->code;
+        $result['name'] = $this->name;
+        $result['old_status'] = $this->old_status;
+        $result['new_status'] = $this->new_status;
+        return $result;
+    }
 }

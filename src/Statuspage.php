@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Kartano\Statuspage;
 
+use Kartano\Statuspage\PageElements\AffectedComponent;
 use Kartano\Statuspage\PageElements\Incident;
+use Kartano\Statuspage\PageElements\IncidentComponent;
 use Kartano\Statuspage\PageElements\Page;
 
 final class Statuspage
@@ -65,5 +67,32 @@ final class Statuspage
         }
 
         return $statuspage;
+    }
+
+    /**
+     * @param string $filter
+     * @param bool $isRegex
+     * @return AffectedComponent[]
+     */
+    public function getComponents(string $filter, bool $isRegex = false): array
+    {
+        $results = [];
+        foreach ($this->incidents as $incident) {
+            foreach ($incident->incident_updates as $incidentUpdate) {
+                /** @var AffectedComponent $affectedComponent */
+                foreach ($incidentUpdate->affected_components as $affectedComponent) {
+                    if ($isRegex) {
+                        if (preg_match($filter, $affectedComponent->name)) {
+                            $results[$affectedComponent->code] = $affectedComponent->toArray();
+                        }
+                    } else {
+                        if (mb_strtoupper($affectedComponent->name) === mb_strtoupper($filter)) {
+                            $results[$affectedComponent->code] = $affectedComponent->toArray();
+                        }
+                    }
+                }
+            }
+        }
+        return $results;
     }
 }
