@@ -364,12 +364,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "9583d9d4ece5aa33abad37a192ca05599e3313de"
+                "reference": "6117535ca6e873ef4abda6a7b17f575455021ba2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9583d9d4ece5aa33abad37a192ca05599e3313de",
-                "reference": "9583d9d4ece5aa33abad37a192ca05599e3313de",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/6117535ca6e873ef4abda6a7b17f575455021ba2",
+                "reference": "6117535ca6e873ef4abda6a7b17f575455021ba2",
                 "shasum": ""
             },
             "require": {
@@ -415,7 +415,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-22T11:44:20+00:00"
+            "time": "2025-09-23T09:04:36+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -961,12 +961,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "f3d0f1b85f7475a691a4bfb3987cb78700551139"
+                "reference": "c4f382a7cec6669ce9d11bc4993ccc4bbd61c155"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f3d0f1b85f7475a691a4bfb3987cb78700551139",
-                "reference": "f3d0f1b85f7475a691a4bfb3987cb78700551139",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c4f382a7cec6669ce9d11bc4993ccc4bbd61c155",
+                "reference": "c4f382a7cec6669ce9d11bc4993ccc4bbd61c155",
                 "shasum": ""
             },
             "require": {
@@ -1059,7 +1059,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-22T05:42:26+00:00"
+            "time": "2025-09-23T15:13:22+00:00"
         },
         {
             "name": "psr/container",
