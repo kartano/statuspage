@@ -73,7 +73,7 @@ final class IncidentComponent
         set { $this->parent_incident = $value; }
     }
 
-    public function __construct(array $incidentComponent, Incident $parent)
+    public function __construct(array $incidentComponent, ?Incident $parent = null)
     {
         $this->parent_incident = $parent;
         $this->id = $incidentComponent['id'];
