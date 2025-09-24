@@ -6,10 +6,9 @@ namespace Kartano\Statuspage;
 
 use Kartano\Statuspage\PageElements\AffectedComponent;
 use Kartano\Statuspage\PageElements\Incident;
-use Kartano\Statuspage\PageElements\IncidentComponent;
 use Kartano\Statuspage\PageElements\Page;
 
-final class Statuspage
+final class Statuspage implements \Countable
 {
     public ?Page $page = null {
         get => $this->page;
@@ -29,25 +28,10 @@ final class Statuspage
      * @throws \RuntimeException Failed to retrieve data or CURL could not be initialized
      * @throws \JsonException Failed to decode the raw JSON string
      */
-    public static function getFromURL(string $URL, int $timeout = 30): Statuspage
+    public static function getFromURL(string $url, int $timeout = 30): Statuspage
     {
-        if (0 > $timeout) {
-            throw new \InvalidArgumentException('Timeout must be great than 0');
-        } elseif (filter_var($URL, FILTER_VALIDATE_URL) === false) {
-            throw new \InvalidArgumentException('Invalid URL');
-        }
-        $handle = curl_init($URL);
-        if (false === $handle) {
-            throw new \RuntimeException('Failed to initialize cURL');
-        }
-        curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($handle, CURLOPT_CONNECTTIMEOUT, $timeout);
-        curl_setopt($handle, CURLOPT_HTTPHEADER, ['Accept: application/json']);
-        $response = curl_exec($handle);
-        if (false === $response) {
-            throw new \RuntimeException(curl_error($handle), curl_errno($handle));
-        }
-        return static::getFromJSONString($response);
+        $rawtext = Util::loadFromURL($url, $timeout);
+        return static::getFromJSONString($rawtext);
     }
 
     /**
@@ -94,5 +78,10 @@ final class Statuspage
             }
         }
         return $results;
+    }
+
+    public function count(): int
+    {
+        return count($this->incidents);
     }
 }
