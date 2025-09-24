@@ -2,8 +2,6 @@
 
 namespace KartanoTest;
 
-use Kartano\Statuspage\PageElements\AffectedComponent;
-use Kartano\Statuspage\PageElements\Incident;
 use Kartano\Statuspage\Statuspage;
 use PHPUnit\Framework\TestCase;
 
@@ -11,7 +9,9 @@ class StatuspageTest extends TestCase
 {
     public function testPageLoad(): void
     {
-        $rawJson = file_get_contents(__DIR__ . DIRECTORY_SEPARATOR . 'rawjson.txt');
+        // phpcs:disable Generic.Files.LineLength
+        $rawJson = file_get_contents(__DIR__ . DIRECTORY_SEPARATOR . 'test_data' . DIRECTORY_SEPARATOR . 'statuspage.txt');
+        // phpcs:enable Generic.Files.LineLength
         $page = Statuspage::getFromJSONString($rawJson);
         $this->assertEquals('Clever', $page->page->name);
         $this->assertEquals('https://status.clever.com', $page->page->url);
@@ -28,7 +28,9 @@ class StatuspageTest extends TestCase
 
     public function testGetComponents(): void
     {
-        $rawJson = file_get_contents(__DIR__ . DIRECTORY_SEPARATOR . 'rawjson.txt');
+        // phpcs:disable Generic.Files.LineLength
+        $rawJson = file_get_contents(__DIR__ . DIRECTORY_SEPARATOR . 'test_data' . DIRECTORY_SEPARATOR . 'statuspage.txt');
+        // phpcs:enable Generic.Files.LineLength
         $page = Statuspage::getFromJSONString($rawJson);
 
         $results = $page->getComponents('Single Sign-On');
