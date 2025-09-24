@@ -1,7 +1,6 @@
 {
     "name": "kartano/statuspage",
-    "description": "Generic Statuspage processpr",
-    "version": "1.0.0",
+    "description": "Generic Statuspage processor",
     "type": "library",
     "authors": [
         {
